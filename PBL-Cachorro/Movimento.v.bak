@@ -1,0 +1,10 @@
+module Movimento();
+
+input ;
+output ;
+
+// Q1: F = D1 !D3 + D2 D3	
+// Q2: F = D2 !D3 + !D1 !D2 D3	
+// Q3: F = !D3	
+
+endmodule 

@@ -1,0 +1,13 @@
+module Mux(
+    input C,
+    output DM,
+    output DT
+);
+
+    // A saída DM é o complemento da entrada C (porta NOT)
+    not(DM, C);
+
+    // A saída DT é igual à entrada C (conexão direta)
+    assign DT = C;
+
+endmodule 

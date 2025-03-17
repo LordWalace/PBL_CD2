@@ -1,0 +1,11 @@
+Fitter Status : Successful - Tue Oct 29 19:11:30 2024
+Quartus Prime Version : 23.1std.1 Build 993 05/14/2024 SC Lite Edition
+Revision Name : Pbl_Cachorro
+Top-level Entity Name : Pbl_Cachorro
+Family : MAX II
+Device : EPM240T100C5
+Timing Models : Final
+Total logic elements : 51 / 240 ( 21 % )
+Total pins : 19 / 80 ( 24 % )
+Total virtual pins : 0
+UFM blocks : 0 / 1 ( 0 % )

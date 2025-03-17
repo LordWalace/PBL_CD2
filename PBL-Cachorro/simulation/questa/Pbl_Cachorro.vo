@@ -1,0 +1,204 @@
+ -- Copyright (C) 2020  Intel Corporation. All rights reserved.
+ -- Your use of Intel Corporation's design tools, logic functions 
+ -- and other software and tools, and any partner logic 
+ -- functions, and any output files from any of the foregoing 
+ -- (including device programming or simulation files), and any 
+ -- associated documentation or information are expressly subject 
+ -- to the terms and conditions of the Intel Program License 
+ -- Subscription Agreement, the Intel Quartus Prime License Agreement,
+ -- the Intel FPGA IP License Agreement, or other applicable license
+ -- agreement, including, without limitation, that your use is for
+ -- the sole purpose of programming logic devices manufactured by
+ -- Intel and sold by Intel or its authorized distributors.  Please
+ -- refer to the applicable agreement for further details, at
+ -- https://fpgasoftware.intel.com/eula.
+ -- 
+ -- This is a Quartus Prime output file. It is for reporting purposes only, and is
+ -- not intended for use as a Quartus Prime input file. This file cannot be used
+ -- to make Quartus Prime pin assignments - for instructions on how to make pin
+ -- assignments, please see Quartus Prime help.
+ ---------------------------------------------------------------------------------
+
+
+
+ ---------------------------------------------------------------------------------
+ -- NC            : No Connect. This pin has no internal connection to the device.
+ -- DNU           : Do Not Use. This pin MUST NOT be connected.
+ -- VCCINT        : Dedicated power pin, which MUST be connected to VCC  (2.5V/3.3V).
+ -- VCCIO         : Dedicated power pin, which MUST be connected to VCC
+ --                 of its bank.
+ --                  Bank 1:       3.3V
+ --                  Bank 2:       3.3V
+ -- GND           : Dedicated ground pin. Dedicated GND pins MUST be connected to GND.
+ --                  It can also be used to report unused dedicated pins. The connection
+ --                  on the board for unused dedicated pins depends on whether this will
+ --                  be used in a future design. One example is device migration. When
+ --                  using device migration, refer to the device pin-tables. If it is a
+ --                  GND pin in the pin table or if it will not be used in a future design
+ --                  for another purpose the it MUST be connected to GND. If it is an unused
+ --                  dedicated pin, then it can be connected to a valid signal on the board
+ --                  (low, high, or toggling) if that signal is required for a different
+ --                  revision of the design.
+ -- GND+          : Unused input pin. It can also be used to report unused dual-purpose pins.
+ --                  This pin should be connected to GND. It may also be connected  to a
+ --                  valid signal  on the board  (low, high, or toggling)  if that signal
+ --                  is required for a different revision of the design.
+ -- GND*          : Unused  I/O  pin. Connect each pin marked GND* directly to GND
+ --                  or leave it unconnected.
+ -- RESERVED      : Unused I/O pin, which MUST be left unconnected.
+ -- RESERVED_INPUT    : Pin is tri-stated and should be connected to the board.
+ -- RESERVED_INPUT_WITH_WEAK_PULLUP    : Pin is tri-stated with internal weak pull-up resistor.
+ -- RESERVED_INPUT_WITH_BUS_HOLD       : Pin is tri-stated with bus-hold circuitry.
+ -- RESERVED_OUTPUT_DRIVEN_HIGH        : Pin is output driven high.
+ ---------------------------------------------------------------------------------
+
+
+
+ ---------------------------------------------------------------------------------
+ -- Pin directions (input, output or bidir) are based on device operating in user mode.
+ ---------------------------------------------------------------------------------
+
+Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
+CHIP  "Pbl_Cachorro"  ASSIGNED TO AN: EPM240T100C5
+
+Pin Name/Usage               : Location  : Dir.   : I/O Standard      : Voltage : I/O Bank  : User Assignment
+-------------------------------------------------------------------------------------------------------------
+GND*                         : 1         :        :                   :         : 2         :                
+GND*                         : 2         :        :                   :         : 1         :                
+GND*                         : 3         :        :                   :         : 1         :                
+GND*                         : 4         :        :                   :         : 1         :                
+GND*                         : 5         :        :                   :         : 1         :                
+Frequencia1s                 : 6         : output : 3.3-V LVTTL       :         : 1         : N              
+GND*                         : 7         :        :                   :         : 1         :                
+Frequencia2s                 : 8         : output : 3.3-V LVTTL       :         : 1         : N              
+VCCIO1                       : 9         : power  :                   : 3.3V    : 1         :                
+GNDIO                        : 10        : gnd    :                   :         :           :                
+GNDINT                       : 11        : gnd    :                   :         :           :                
+clk                          : 12        : input  : 3.3-V LVTTL       :         : 1         : Y              
+VCCINT                       : 13        : power  :                   : 2.5V/3.3V :           :                
+GND*                         : 14        :        :                   :         : 1         :                
+GND*                         : 15        :        :                   :         : 1         :                
+GND*                         : 16        :        :                   :         : 1         :                
+GND*                         : 17        :        :                   :         : 1         :                
+GND*                         : 18        :        :                   :         : 1         :                
+C                            : 19        : input  : 3.3-V LVTTL       :         : 1         : N              
+GND*                         : 20        :        :                   :         : 1         :                
+GND*                         : 21        :        :                   :         : 1         :                
+TMS                          : 22        : input  :                   :         : 1         :                
+TDI                          : 23        : input  :                   :         : 1         :                
+TCK                          : 24        : input  :                   :         : 1         :                
+TDO                          : 25        : output :                   :         : 1         :                
+GND*                         : 26        :        :                   :         : 1         :                
+GND*                         : 27        :        :                   :         : 1         :                
+GND*                         : 28        :        :                   :         : 1         :                
+GND*                         : 29        :        :                   :         : 1         :                
+GND*                         : 30        :        :                   :         : 1         :                
+VCCIO1                       : 31        : power  :                   : 3.3V    : 1         :                
+GNDIO                        : 32        : gnd    :                   :         :           :                
+GND*                         : 33        :        :                   :         : 1         :                
+GND*                         : 34        :        :                   :         : 1         :                
+GND*                         : 35        :        :                   :         : 1         :                
+GND*                         : 36        :        :                   :         : 1         :                
+GND*                         : 37        :        :                   :         : 1         :                
+T8s                          : 38        : input  : 3.3-V LVTTL       :         : 1         : Y              
+G7                           : 39        : output : 3.3-V LVTTL       :         : 1         : Y              
+T4s                          : 40        : input  : 3.3-V LVTTL       :         : 1         : Y              
+C7                           : 41        : output : 3.3-V LVTTL       :         : 1         : Y              
+T2s                          : 42        : input  : 3.3-V LVTTL       :         : 1         : Y              
+GND*                         : 43        :        :                   :         : 1         :                
+GND*                         : 44        :        :                   :         : 1         :                
+VCCIO1                       : 45        : power  :                   : 3.3V    : 1         :                
+GNDIO                        : 46        : gnd    :                   :         :           :                
+GND*                         : 47        :        :                   :         : 1         :                
+GND*                         : 48        :        :                   :         : 1         :                
+GND*                         : 49        :        :                   :         : 1         :                
+GND*                         : 50        :        :                   :         : 1         :                
+GND*                         : 51        :        :                   :         : 1         :                
+sel                          : 52        : input  : 3.3-V LVTTL       :         : 2         : N              
+GND*                         : 53        :        :                   :         : 2         :                
+GND*                         : 54        :        :                   :         : 2         :                
+GND*                         : 55        :        :                   :         : 2         :                
+GND*                         : 56        :        :                   :         : 2         :                
+GND*                         : 57        :        :                   :         : 2         :                
+GND*                         : 58        :        :                   :         : 2         :                
+VCCIO2                       : 59        : power  :                   : 3.3V    : 2         :                
+GNDIO                        : 60        : gnd    :                   :         :           :                
+GND*                         : 61        :        :                   :         : 2         :                
+GND*                         : 62        :        :                   :         : 2         :                
+VCCINT                       : 63        : power  :                   : 2.5V/3.3V :           :                
+GND*                         : 64        :        :                   :         : 2         :                
+GNDINT                       : 65        : gnd    :                   :         :           :                
+GND*                         : 66        :        :                   :         : 2         :                
+GND*                         : 67        :        :                   :         : 2         :                
+Frequencia8s                 : 68        : output : 3.3-V LVTTL       :         : 2         : N              
+GND*                         : 69        :        :                   :         : 2         :                
+B7                           : 70        : output : 3.3-V LVTTL       :         : 2         : Y              
+GND*                         : 71        :        :                   :         : 2         :                
+GND*                         : 72        :        :                   :         : 2         :                
+GND*                         : 73        :        :                   :         : 2         :                
+GND*                         : 74        :        :                   :         : 2         :                
+GND*                         : 75        :        :                   :         : 2         :                
+GND*                         : 76        :        :                   :         : 2         :                
+GND*                         : 77        :        :                   :         : 2         :                
+GND*                         : 78        :        :                   :         : 2         :                
+GNDIO                        : 79        : gnd    :                   :         :           :                
+VCCIO2                       : 80        : power  :                   : 3.3V    : 2         :                
+GND*                         : 81        :        :                   :         : 2         :                
+GND*                         : 82        :        :                   :         : 2         :                
+GND*                         : 83        :        :                   :         : 2         :                
+saida_mux                    : 84        : output : 3.3-V LVTTL       :         : 2         : N              
+GND*                         : 85        :        :                   :         : 2         :                
+GND*                         : 86        :        :                   :         : 2         :                
+GND*                         : 87        :        :                   :         : 2         :                
+Frequencia4s                 : 88        : output : 3.3-V LVTTL       :         : 2         : N              
+GND*                         : 89        :        :                   :         : 2         :                
+A7                           : 90        : output : 3.3-V LVTTL       :         : 2         : Y              
+GND*                         : 91        :        :                   :         : 2         :                
+F7                           : 92        : output : 3.3-V LVTTL       :         : 2         : Y              
+GNDIO                        : 93        : gnd    :                   :         :           :                
+VCCIO2                       : 94        : power  :                   : 3.3V    : 2         :                
+GND*                         : 95        :        :                   :         : 2         :                
+P7                           : 96        : output : 3.3-V LVTTL       :         : 2         : Y              
+GND*                         : 97        :        :                   :         : 2         :                
+D7                           : 98        : output : 3.3-V LVTTL       :         : 2         : Y              
+GND*                         : 99        :        :                   :         : 2         :                
+E7                           : 100       : output : 3.3-V LVTTL       :         : 2         : Y              
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        @è‹   À›2@è‹A ÷l7eĞãzrÖ`å 0Y3¶`ëñÑ9ÍÚÎ 0Mc!ô£Xá…Ñô}è”ø@ØFXB%‹…Ñ«&,#n+PD–à™·ÁıÍxh<X`8ÓÕ"‡ù±M`ÜB¾°p¤ª•8†f¡I¤ÿ4Ş¬€P ú»N@‘·d¯ƒíd“ÁæFH¢NRW…'ÌC‚  ĞPwP'¦qé1¼×°­ì¯‹ñ€a-ŞgñÜ•À¨†$QãEJ›~2ĞQZj{¯?AËlG`àè_/êˆ1¥Æ˜È›(ğ­K£$f¿'!1o‘ª‚÷ áƒ…d(/ºÒã>ß”ÂèXjŞÎ‹_£5KÊŠ ‘’$i9Lñ€–$Iîı™0Ñ$:ww*áTG(˜ŠÑ¡@ù-\Ës£Ñš±f*Â†ñPhMû–ÁBÓË@P`xß!åõ±|	\WãGpNh›[N¡˜V Àdìÿ€ñåâ0‘&lËoê¸B¦U|³ØAæ½ÙÆX1  G8ñèq˜ç*ìÇGí°î‘ƒGOaüŒµà“:“ÀÉB£‹¦ûUQÒéî‹­ĞR³}K´AÚ]<¢Â	àÉ›zÊ[éï1Ô /½*H‰ğnìÂFU[:!€ÚknF. Bè‹   Ş›2Bè‹"÷l½7e.şzrfå ²ä4¶ØùëñofÍdˆ0 }õWd™ácS’¶áy@Ú}İsBwÑÉ_ú	+]ÚPÓœ«fOÕÅÁa0TzC`ºÕÔ­ŒÛü±ë…xø²¥pÏØ|.¡'´íçşÁ€Rí7a—K‘ÕVëÆm[ƒÊ8ºFµQ×ã9şî ¢ÉÚ7Øq‡Ğ>o&I°ï7®õÇ†aG5§‰Àª)ŸÕ‹=QqÓ/[ºĞŸckÃÈ¾A)RÖ‡b‘àjĞÓ[1C6^E”9åğï-…Aó•Ì!±ÍÆ0÷ ã_Çê,kMÈ©¤U„FÁó¶Ã½!SHÁş8 úŞ=ªñ§ÀÜÕ0ĞÊù1„‹˜á2â¢÷é@û@‹•cXÑ¸Î({¿¹PÔdñ#Áp°İÍó7u`›VıĞ¹÷»±Ø~Ú p©ÿ…àä¡vÊèjjF€óÜ£ä²êú‘Dò™ånW2Ä+¼DîMÛ€Â öZÑSşq6j~îGßw°09hjm„aÚYì™°+ÀËCš6ß²ªQğø	óß¾šĞ–•(A8ËÃ*şî,àKèxÂÌe1rœEûİoğ°*D=+£!^€ş†9oÚ Dè‹   ü›2Dè‹Å#÷lù7eŒ{rbkå 4p6¶Pcìñ“0ÍîA0ÑØöp$áA?±¦„.û@Ü´b¥ùhÑç˜ÈğNL‰P•õÀì‡ÔÁ¿cN/Œü-`<Ø—†ö/ ±‰«åB®§špuœ¿~õ¡ÄÛšKz×€T|à³sî{‘óH'
+u#EFM)˜%;‡û/zÄ $Ãê=ãF
+q%oÁ@uê„°1ƒU<,‹aé¯9q}À¬N(¸‹WQœ\ŠÜ7BĞÕ%mlâ=A‡7e*dàì@î¼.1áÍõñ_×¡ğ1g^€lq!íò	x·k å;•)­BÄk‚¾o
+$F¤)Ÿû pE¸õç •a™çñ¼·ü6º0ÄÎ)‘Ÿá}£“2@ıSºo·8ÑÖëêË¼¦€P–ÑÃÃæ°tÁÎGyÈ/š`5€o
+‚±¸˜á¥Ñ¹pÒ®éèpe{¡T>±p $€õ¦bæå¤Ö‘bÈÇÿmPöÆ½´Ô~6¢—İ:,æ …ËÚ|¶qÔìÑğÇv°ràL‹âöa¸&÷Ÿ&ÄÀÍD‘ájÿQƒ÷3|ˆĞÖx­ÑO‚A–*ZPàÍ4wºİ®Û1üÌËsVğòhÅ3á!<&‘ø˜† Fè‹   œ2Fè‹‡%÷l58eê2{r¨på ¶û7¶ÈÌìñ«¿GÍxû0;4ø¿{¯áv»R{|@ŞëçÖø¯ZÑÒ–×r;8PWNÖrÀMâÁ—
+Ü`¾ÚZ_`„±'ÑRöcœpSAÚû¼¡ãÓÉM‚öì€VjÓ/†E¬‘;cM3}ëvĞ‘/qê6&ö™ ¦¼7¡¬V<qÃDÄĞÀ°sÎü‚@IaÇĞ\;qÀ®s1ÑA“pQ=ÇåŠÊĞ—¬vmSû¼Aåô9{f‰àn±M¦1e+u^ğsòH{C!Ë4F)>à– çŒoX‰f´5pFÕ’6‡3yB¯ì– ÉSç½üeñZÈè­7˜M0T½£!³táî˜(˜Cz@ÿféAÙÂÑô­º6HPX†#Ü=èÁ,ßÃC&¿`Ÿ9/%H±V&X$ÍÈrp?*Ò[ê¡2²yÀuú6€÷p!è_²‘€õm•ˆIdåÑ° Oàßô•À ¡$ŸY)qro%óG°´‡1°©Eia–óæ¦œ\ÀÏEˆŒP!TQ,üû‡9vĞ˜[Å$véAô]¶GsàOu²‘Q1®“âTœ	=ğ4§F*×#v!Ì#jĞÀ2 Hè‹   8œ2Hè‹I'÷lq8eHM{rîuå 8‡9¶@6íñIì^Íµ0UØùs‡:áı¬mÏ Èı@à"mêfLÑ#e¾–*çP§ëøø‰ğÁ{ÊÎå¯¼`@İ8ÊØ±Åö¿©‘„p•u?£Fw„¡Áã· ¹r€XXÆ«˜œÜ‘/-ŸJ…³É¥S
+ü#Ï¶æ*ro (¶„vfnqa¬Æã·ü°µ¤É|f•a¥€eÀ°˜:ê÷ŠQ[òny7ñQĞY3€n›<ACƒIuhàğ!­"!Ô1ı$K÷ğµÔ*˜š»!©v‚ÚÄT! éó¤î1nv§JªûÕh•Ê_úÏ0ok×œ«?¦ãE ™0¼”óÃñøØÔ$Pv‰0–¶x«ÇâáÌ²®œiÂ@zûâvÑ&om·ÆP;ƒ:ÒÊ[ÁŠv°½kä`!òVŞÚ/±ô/gô¿+pVÏj»Fo¨¡&Bk{TI€ù:àéK‘t#4l¶3JÕŸõ$+^)â®ÿš ‰vnÁz>qòxõÇ¥°ö.ÓÇ¨ÛatÀL¬õÀÑF7‰Ø¨QJ&u ÜöcĞZ>İW.PAR§öõt–àÑÍsª_tÇ1LÉÜlŸ#ğvåÇ ­fß!øq¶Û›éŞ Jè‹   Vœ2Jè‹)÷l­8e¦g{r4{å º;¶¸ŸíñçvÍŒn'0—uëú'“ÅáÛãËãî@âYò9Û>ÑAD3¥º–PÛÿ 1ÆşÁÙıÁÁœî`Âßà4-
+±c-]Ï…yp×©¤&ŠóK¡Ÿó¥³ïî€ZF¹'«ó‘MÛÓa{‹ÕÖúh-ƒ–BîD ª¯Ñg?v qÿJIµa8°÷dK¹ƒšaƒêj¤ÏYÀ²½C®š£QyøğäÍÙĞº‰oã-»A¡çYojàr’y'$§1»”¼÷Â°×ğ÷¶µ'ğ_!‡¸¾‹KÉ« ëÏ,QôƒÏÅ. Á;‹UŒ½biEW£5É<Úô ˜Èkê!ñ–éÀ›hTÅ0Ø¯M¸ÛPáªM3¡
+@Gæ¸+Ñ0C1¾´V×PÜïâõÇWÏÁèL¸“	`£ĞtBÔ±’9Ø©·äp˜_«¤1ô>¡î™
+®[€ûŸë~Ói‘¼JQNkiÒaÃ'x¥¼¯rähiu L¸ãáÜSq®tÌ÷G=¢°8ÖúõåNaR²²ˆÀÓGvâÁıQh5î0´QĞ!õš8Ä·A°ğ\äm ¹àSr¢ W=1êŠ¯d=5
+ğ¸#Iƒ©H!ÖIMg‹ Lè‹   tœ2Lè‹Í*÷lé8e‚{rz€å <<¶0	îñ…EÍ(/0ÙGüÛPá¹*ø¼a @äwkÌÔ/Ñ_}ŒŞEPXjÁ71OœÓ|Ù`Dâ£é±Bš…znpŞ	ªÍo¡}”f&k-€\4¬£½J=‘ky•CMZëƒÓ‹OFZj ,©Ë†ÒqéË†°ƒt°9°òVõ ŸaaS8È™MÀ´âLd½Q—Hh’ªaĞİ@“p+G:AÿÌ hilıàôlb,'z1Y,T¤N”ğ9™îÑ´Æ!eúú<Ò=6 í«´³¶™(ã–‡¡­NËZ?Û“™æ9”Ñ£ ÿ‚eBáñ4ú¬20©"	Åï¾áˆè¹¥µR@ v¸>àÑN`ó²æP¤B±½äBÁF¥ç²».`%¯’<FUš±0C˜ìB®pÚïëyÕ¡ÌÓÀ†n€ıÎ]í±E‘Ú hjqÎìr°Ëà»æ"ÓO !&?iqL÷úÇÔ,°z}ßoÀa0Z%¸ş%ÀÕHmúFRQ†Dg	„q?ĞŞŞBëA:ÃÒÉÌÜàÕfpšá9³1ˆ–ìËğğúaÊYì±!´½Û¾2;7 Nè‹   ’œ2Nè‹,÷l%9ebœ{rÀ…å ¾)>¶¨rîñ#r¤Í á60°¢ıªÛá—Qˆ‹®@æÇüœ½‹!Ñ}¶ÏrøóP_±+‹¢>Á•dwå\Ä`ÆäfÂÖ±ŸgÄ:ocp[o-ìÚ¡[‚]çB€^"ŸĞ¡m‘‰SZ5İÛş>éöqşåï ®¢k.Ò•q;ˆNXÿi°°{û™1¾¤a?¼ìc AÀ¶V5¢ÖQµs
+à?‡éĞŸÇœqs`¹A]²/xcnyàvsËK1*M1÷ÃëPZìPğ{{ĞîA©!C<7îX²À ï‡<y¯÷‹MĞÕy3œn'ñ7‹ÈR g=:ØİñÒ
+™‰™=0\¢÷ Ò-áfƒ‚>ªÛš@³¥Š`b•Ñl}µ_¯vfP`Y¢l³q¶Á¤<ƒ­ãS`§°ëûg`±ÎLX/j¥Vp€,wşk¡ª›kŒb€€ÿ˜ïäG!‘øö¬‚iÏx"9'šxéÜ<* ÷K(j¡~qêysüGl·°¼$Ä;"Ò2a'~0¾t¾À×Id83ş¦Q¤SàØ.-Ğ æ$!M†Alƒ)Á%ùÿàW³n’¢)1&‚|tŞ`×ğ< K//!’cn0şcã Pè‹   °œ2Pè‹Q.÷la9eÀ¶{r‹å @µ?¶ ÜîñÁ»Í*›>0]MşşC¶fáuˆæ Yû@èşÎ®BÑ›ïY&ç¢P!
+AÛz)Áó—ÏR÷<¯`Hç)›q*±=twğcXpFÔ°Th¢¡9#pÌ“cX€`’›âø‘§õ§¥ÓÑd`ÌyªõGè¥‰ôaÅ 0œ¸‘›¥6qÙ&Ñ)NPì°½FAämÛ©a%Ó."5À¸,_NĞ%ğQÓ“WícqĞaN¦r»y8A»—¾‡]põàøã*56- 1•[ƒı%Šğ½]²ÏsN!!~sŸß&K ñcÄx;ÅÚÛmò•ÒÖ›5ƒKO–!4‚¿ ¡Î÷ğÎ;ñp… ²îx0›ÌøŞ›áDıÃ®ã@	ÆÔ\‚7JÑŠšw°¬.P"(©ş)ÁÔ¨úw`)lÎš±z&±lVr‘œp^m`ò‚¡ˆõc’¼’€cÛğı‘ÍÚœh‚®RÒÁ7qÖ@Në–¦ ‘Ì•J®”qˆüÆşÇB°şË¨^@5¥aìóã;ÄêVÀÙJ[ãkµûQÂbY,ìĞbÉ<dW9íAÊÌ¯%#àÙÿlŠcÿ1Äıbü®ö½ğ~ŞÌúr„!p	¢ÉŒ Rè‹   Îœ2Rè‹0÷l9eÑ{rLå Â@A¶˜Eïñ_ËÒÍ´TF0ŸêY øÁñáS¿D5'H„@ê5  ùÑ¹(l@JÖQPãbV—·7ÁQË.	š`ÊéìsÛ~±Û²á*¦XMpßz94˜äi¡3^Êßm€bş„õOÎ‘ÅçÊà¾­›“”ã¼ôê¥´U¡êİš ²•õdµhqwÅSûœ6(°ÿ‘è*ªø®aû 3ø#)ÀºQhg†©	QñÉÏš@ùĞ#Õ¯s“·A}M—WrqàzTŠ;0ó13óªñ'Êğÿ?”(\Jó!ÿ¿¯Pf›Õ ó?LÛıÚ3=¿wÙÒV”4Ï—÷‚­?1y¶° #6²ãÆÅ™ñ,qwÊÌ´0à”¡ğë+	á"¹wI³'+@Ù/¤ÿÑ¨·9ª–õPäÂaã‹Á`kº¢3ñœ`«JìIgì±
+`Ø´¸“Èp  ­Iİ™¡fi,Á—¥€-šòJ¼Ø‘4£·g5MJHÄ4q—íPß ¢ßlòe©q&H›Ì°@s^˜aÊÀIGÊ`ïÀÛKR¤lPQàqÒ€©Ğ$¬T§a`TA(öİQFà[Lk‚$â1byI„Œ¤ğÀNñÚ´í!N¯“•µ; Tè‹   ìœ2Tè‹Õ1÷lÙ9e|ë{r’•å DÌB¶¯ïñı÷éÍ>N0á‡µ¬Í|á1ö¢Iõ”@ìlŒ1‘°öÑ×a:'nÅ P¥»kLóEÁ¯şO	ı„`Lì¯LEÓ±yØNŞ[MBp!¯·Û`1¡õBL2\ƒ€dìw“§ş‘ãÙ$ÖµcUÄf­oŞ¹àYp 4RX.ÅšqdÖÌëd°Aİqæ´aÙömWÂ%À¼vq€<-#Qõ¥FHĞå[¹tK¬6AwbÜ¦QtíàüÄé@3Æ1ÑŠ²V½Å†ğA"vEé ˜!İìí` õÔ=ÀğŒ[£mŸ87V’lh¬ßº“\.p­_ ¥l¸¼÷ñ¬<]îâªğ0"vèø?wá TòÎ·Ms@ì2Æá³ÑÆÔûQ§&½P¦wÁ”Á¾V[èÁ`-)
+ù ²±¨i˜÷ßŠpâ0î2ÈŒ/¡Dİôkp·€÷Xô}v´‘Ry6ÑfèëÖ1ÓX	’¡àï
+z¹ •w)6È¾qÄnÈ2W°‚r¤|û‰a¨¯RĞÖ‡ÀİLI9İ#¥Qş€KÔföĞælêk‡»A†_\Œ9~iàİ˜izåÄŠ1 õ/P"‹ğ[Ïç°÷V!,U&…`Şç Vè‹   
+2Vè‹—3÷l:eÚ|rØšå ÆWD¶ˆğñ›$ÎÈÇU0#%`Ùá-^Ãá†@î£c‚gèÑõš’´¯Pg£„/TÁ2ä,İo`Îîr%¯'±ş»‘B7pcã;İø¡ÓR:å7Ø˜€fÚjş.‘ÌBgí½+ôéêìÒaMµĞÖÕE ¶ˆŸ»÷ÔÌq³Y: °ƒ(7¸"3¹a·_;{Œ'À¾›z™ò°<Q- /¾õùĞ§âÂu“ÅµAÕGk¶Kvià~5IñD6™1o"J‰cCğƒXbv÷<!»C(³s„ê ÷÷[ ‚æy‡ceYÖğÔÁÇòiz+g¤ ''t³UñJMIeûˆ,0d‡KàTåáŞîlT¼s»@ÿaÓç¶hÑäñ½¢¤¶„Ph,!ZŠ¥„Ášñ—ƒßæ`¯(¨Ò²x±FsX:‚:p$Á.³Æ¡"Q½£ÊÉ€Áö°0‘pOdëe›Š˜§à[ijƒğÑ)òÄã“ Ms±z*Ôqb„ÁHÊá°ÄÁVÇš^üa†Z^ÖL ÀßM@äÛùQÄ($äĞ¨q„-v®"Aä¨Âz•ªŒà_ågr¦§ 1p” ¸qğD™PŞ†:À!
+û¸ö+” Xè‹   (2Xè‹Y5÷lQ:e8 |r å HãE¶ ‚ğñ9QÎR]0eÂlå’áíc_r‘.@ğÚ–”sÚÑÔÖôµ£^P)m–)½kbÁkeĞ¿>½Z`Pñ5ş|!±µ#)EÇ6,p¥i¾bYÀ¡±b(˜nT®€hÈ]‹,U_‘¾~ªÆóÙ#meXÇ¿eèÌQ 8‚ìÁäşqQ¡Ûo‰éÛ°ÅsŞş^P¾a•ÈŸV)ÀÀÀƒ²¨4VQKK¸5£ÖĞiiÌvÛŞ4A3-úÅExåà ¦¨ÚI9l1ºá¯T ğÅæ9Îá!™…ddúøt ùÓãE?—kY+|–ÚM=›Õ¯*Ç—(^›½ ©láaKª³ñè]5Ügh0¦€ ØhSá¼‰çÙÀ™@‘¥	ŒÑ€ó¡FLP*á€€2øÁz1’«Ö`1æEWˆÅ>±ä|}.yópfQo–\¡ Å…Á¨$Ü€	‹Ö÷ãêk‘%’eN)Z3äy½ıNsô~Mn ™"½Ó¾Œéq Èal°i;ê¸Ánad'{iÜÂ¸ÀáN7N’NQ:Ÿ=$|áÑĞjTœp€Õ‰ABò(iñÖ¯àá1fjgŠv1<ìüñMXğ†×ÑÔ\})!è Kh÷/@ Zè‹   F2Zè‹7÷l:e–:|rd¥å ÊnG¶xëğñ×}/ÎÜ:e0§_ÈÈğáËš½†_{‰@òÆdÕËÑ1¥ÛÙ’PëÅ«¯õ§pÁÉ˜›PE`ÒóøÖ‚Ğ$±SI–ø|+!pçKÎA¦Õ‡¡rK¥ĞÃ€j¶P?¬‘=°ºíÎ»›Sğ~àÃ»æ ÃÍğ º{9‚Šô0qï?^AØÏ°¿…E›mÃas1ÖÂ +ùÀÂåŒË^¸oQivA­P³Ğ+ğÕw#ø³A‘‰Õ?zaà‚ÄN<?1«Qy\ Ÿ¼ğÉœ¤†!wÇ mÿ û¯ke2˜µOOñiVœ«¥4ê—b%µ%U’l +Ô›6"¡ñ†n!S,E¤0èyõÏ|Ááš$b_Å¿K@%Àw+aÒÑ ,BDŸÖPì•àĞu¿kÁØÈ(ÓÍ0`³Äc>Ø±‚†Ø¿Up¬p¨á¯îˆó¡Ş8Nl®~î€U•ù¥G‘¬û¿dÈ¿?mŠx¬2¼ö8·H øöïşq‰h
+Hùö°H ×$áaBôàtâ8QÀãO.:‡I£QX®¶(Ğ¿Ğ,7´³ŠüğA ;WMÓàc~db(mì1Úgã£Áã>ğÈSË2À’!ÆFŞÙÂXì \è‹   d2\è‹İ8÷lÉ:eôT|rªªå LúH¶ğTññuªFÎfôl0éü#|ü¨á©Ñ›-È
+@ôH¡÷UŒ½ÑOFsÂı¼P­Á5.ä~Á'ÌPvb}0`Tö»¯ì$(±ñn¬2 p)€3ÅéQO¡m‚şÛLÙ€l¤CƒQÀ‘[¢ö03Öƒ]ƒso[/°{²Ä¹IÆ <u†åScqŞà'¶S°I
+-Œ×ŠÈaQš£æê,íÀÄ
+–ä<‰Q‡¡Ê$ş Ğívßxk3Aï÷å9|İà‡g­S?1Ié	ì<yğI«ı¸{+!U	İÆâ‰ ı‹óÇÉGñÓ3E·ÏÀ^	ÎşšƒŒÒ"L‰ ­;Vù—oñ$ÊD#à0*sÊÇ,/áx¿ÜäÉå“@8ïIM6‡Ñ>I•œfÛP®J@ŒkLßÁ6`Ä‡ûÄU`5£µóêÊ± ˜}gepêqğ×s ‰¡¼¬´Ø €TûI_#‘ÊÑí9c´fŞJïõšcò
+cùò # ÍPGQq<¼È°Š·0õ‡Sa ÁF€è®éÀåP%å¿ øQv½/-$\­ĞîÌö”#XAş„õE©/öàåÊbZéOb1xãÉ+’y%ğ
+TÔÁü!¤ìpK˜ ^è‹   ‚2^è‹Ÿ:÷l;eRo|rğ¯å Î…J¶h¾ññ×]Îğ­t0+š04á‡z¯ûŒ@ö&)GC¯ÑmA©!qkPowÖ»f Á…ÿQt]`Öø~ˆVy+±”p_èpk´˜H-Î¡K’ò°Éî€n’6ÿcZğ‘y”2tJŞK³ö_Öš¤Ù~t/¯Å› ¾nÓH•q+}cäuœ°‹UÔÒ¨Ía/q
+µ.áÀÆ/ŸıÊ¿¢Q¥ÌSœ«l(Ğ¯ıèy³*²AMİ¦ô3~Yà†÷Æ–XBå1ç€¨µ·Ú5ğ‹ßÕªQĞ!3KxV ÿg{*Œ]Jñ;}5ãÖ gvghÒá
+ğC€Ê /£àÏÍñÂù@]0llŸ¿9¤áVZWjÎÜ@Ko<Ñ\fÆå™ö¢PpÿŸGaÙRÁ”÷_‚#¼z`·Ÿd©ı±¾™XE¤^p,1Á^% ¡š ßÁ¹2€éı|ÿ‘è§Tbg Ö~«¶lh“Nû¬Šı £š:‹³)qÚH(°Ì^éRëÅaş¬‹î$‚ÀçQø·LQ”Ì¨1x›Ğ°üã9ŸJ¿A\Î[4\àgaRª2Ø1_°³bğL’U¸ŞEe!‚’½YªD `è‹    2`è‹a<÷lA;e°‰|r6µå PL¶à'òñ±uÎzg|0m7Û	ä¿áe?ØÃÉa@ø¶«Z8ú Ñ‹¸E`P1ĞëAŸ\›Áã2Ñ,†=`XûAaÀÍ.±-ºİ	 p­èıËpJŞ¡)¢àcIE€p€){v± ‘—†n·aæáâyPQ™7K$G¥Aq @h ¬æ#ÇqÉæµÄ‚Ë°Í {PÅÒal>.0ÕÀÈT¨C¼QÃ÷ÜYI°Ğq„òzûC1A«Â5.€Õàh&€]E¸1…@bƒxòğÍoÁò7(u!U)Ë DNs£ü0C›—âÄŞ (P
+?‰:wy ±
+Ë´¦…+ñ` å·ußW0®et·F¸á4õÑïÒ1$@^MîàğÑzƒˆ6—†jP2´ÿWfÆÁòû|K³Ÿ`9`½_W±\£ˆËU×pn’qªIª¶¡x”§l¿Œ%€³Ñş¯ÓÚ‘~Ina¤bbN¼	çÆÃ—ıfô× ¡xä\Ï?qxcÈ¿–°Îu1N8aÜZ—ôšÀéR;1o¡Q²Û!6ÌÖˆĞrßû|©q&AºÂ"aˆ<àéc_JkN1´Ú–;3¥òğĞÖ®´ˆÎ!`8–.%Óğ bè‹   ¾2bè‹#>÷l};e¤|r|ºå ÒœM¶X‘òñO0ŒÎ!„0¯Ô6˜JáCv6Ø—®@úí0Œ)±’Ñ©ñİviOÉPó(È×˜©ÁAf˜ñ`Úı:*"2±ËßJÆSşôpïcO´Æ¥¡²Î€Á€rn÷ˆQ‘µxªúxîÛ£ı@Ìq•Ô^›½F Âam°3ùqgºh‡i°ì"`Œâ×aëÔRI2ÉÀÊy±/7ÇÕQá"f‹&8Ğ3ü{C]°A	¨Ä(‚QàŠØ…ibH‹1#°×O¯ğR£Åş!ïÎ‘Ú›?)  ‹ï‰ü-à&	(W¤"Gš<8B+1n( 3r…‰}|‰ñş°Ñ.½“0ğ^I¯SÌyáLu×Wl@q|À²µ¥Ñ˜ J‡”2Pôh_¾Ló9ÁP&—wsªÄ`»>ÛÂ#±ú¬ØÊòLp°"²“4/M¡VpÅæ7€} ã¶‘$Twˆ`ÍB$îıÌ\a$ôàÿ ^² #N.xTq”¶HW!°P­²˜O±ªaº'x¢ú³ÀëS
+æi&öQĞêš: ”vĞ4ÂÀ³˜Aa(½´_àk°]B,øÃ1RV}Ã;ÙğĞX¥ŠË7!>Ş( ğûœ dè‹   Ü2dè‹å?÷l¹;el¾|rÂ¿å T(O¶Ğúòñí\£ÎÚ‹0ñq’L+Õá!­”ìeû@ü$¶½h„ÑÇ*¬]>xPµNÕ·ÁŸ™Qã©ıÛ`\ È”v5±i¸y	óép1QÈÒ÷Bm¡åÁ¼É¶=/€t\s›_‘Ójæ=ö£eB€1Gİóãƒv‘9 D[ºryC+qYëXbOC°Q7Ê¦ÈÿÜaÉ=Ùu4½ÀÌºHíJïQÿMï´ÀĞõ‘}‹v/AgS#"„ÍàIåRgK^1ÁGo»´kğQ4…,RÕ¾!ÍÎ‹"´³ üRÓUKÄÏfJf€¯3Q zû…H(e× µÙ?^TsçñœÁ½¥¦›Ï02X§`àçáğ*ÇúÛ}´@„«’ÔŠZÑ¶½Ø‘¦ùP¶¿yB€­Á®½2r›¡é`=ùqÊ5ã±˜¶˜DIpò²ò|´ã¡4|8ÂÊ@J€GOH’‘B*¥¢_€áæy­İ¯Û‚$*ÛÇŒ ¥#x¡WÚiq´
+Èî«°’T—»ma˜ôİ­ ‡KÀíT‘¢İJQîù?tQdĞö¤+¾¿ôAvªÿá‚àíü[:íÚ91ğÑcKÔĞ¿ğMÙ›`¡!„»¼$I fè‹   ú2fè‹§A÷lõ;eÊØ|rÅå Ö³P¶Hdóñ‹‰ºÎ”“03î 7`áÿãò 4H‘@ş[;ïvÑåczD±-'PwÚ+ÔHÆÁıÌ‘¾»İÆ`Ş‹ëıÊ8±+%-¿çŞps…-V;¿4¡ÃÑª|í¹D€vJï­¶±‘ñ\"§şk'r"ÂHvQ°3‡µñ ÆTÖBS]q£÷m*±5°“‚qíâa§¦¦™İ5±ÀÎÃÃa£ÎQyxzaßGĞ·~Ó®AÅrâ2†Ià¹D<lN11_ßhæQ(ğ“gIß«c!«R
+=©(> Øš´•´®i¨•Ìl×(ŞÍe²Yf\† 7Aú2+jEñ:Ò©¿y0tQómôUáÎÅA€à£ü@—Údö_ÑÔÚÎ(6ÁPxÒ58!ÁUÎlÃ˜`¿û!€H©±6ÀXPA;p4C3f
+9z¡ğ mĞš\€In‘` Ó¼^3€¨]¡íVàTs•1g 'ùÁÃ›<qR™]H†6°Ôû{Ş‹wavÁC¹ıãÀïUø;Û”ŸQ	CÈRĞ¸‡CFÈæ[AÔóôít¦àoIZ2®½¯1MJÓ¤f¦ğT‹Z’6Q
+!ú)Nƒ‡Mõ hè‹   2hè‹iC÷l1<e(ó|rNÊå X?R¶ÀÍóñ)¶ÑÎ¢M›0u¬I´BëáİQ•@ “À ıÕgÑH+ÕÖP93AZMÔÁ[ Ò™Í½±``NÄg<±¥P’àtÜÓpµ¹’Ù~;ü¡¡á˜/$6Z€x8õjÀâ‘O^Ä¾4é¡†=´j¯|ã¥}1Ç HNT9cqA–ğûÿ»°ÕÍ4A:ça…t½§7¥ÀĞèÌzYR"Q;¤ò¼ÏĞyŸ©-A#XqBˆÅà*¤%qQ1ıv²ïäğÕøHfl‚!‰”Fî/È 	´"XÊ‡Œ[2—ê;€fzğé·‚ƒS5 ¹¨´a£ñØâ•“×WG0¶JÈ–zÄá¬`¼åÉD@!ª	75ÄÑò÷yŒÆˆP:‡~ğ-š”Ájìigë3`AÚ4Ğ5[o±ÔÉ“h2»pvÓsOõ½¡ğcÉÖôn€ÛÌ|¼I‘~Ö ×]æj‘*şUĞ>…¼O›A ©Îæß”qğ±ÈÁ°£`ªÚaT©Äs|ÀñVïæLôQ*HÌ?Ğzj[‰ÒÃA2=[ÜĞ9Éàñ•X*o %1,É0[uüŒğ–ÉÛˆ”s!ØÏàôRv¡ jè‹   62jè‹+E÷lm<e†}r”Ïå ÚÊS¶87ôñÇâèÎ,£0·I¥hNvá»Q¯)Ğá“@ÊERîŒYÑ!Öù…Pû‹Và¹‰âÁ¹3ußœ`âÑs?±Cvÿ“*ÑÈp÷í÷\Â·Ã¡ñ†âZ²o€z&èæÒd‘-AšÖü«Ñ	¸_I“½s­œ ÊG¡œÕrÁqß4sÍN÷°Àz}WìacxAáq9™ÀÒÖ“Ö;QYÏŠi¼˜WĞ;&"€cÂ¬A= RŠAà’švT×1›6Á}¡ğÛ*ƒùX­!gÖ‚Ÿ¶S ªyà`¥pş ˜±W¬™èÿØ!¡Jä ;oÜØWñvó
+ğ5ƒ0øC‡2áŠû6‹éïŒ@#½8	:
+yÑSÊ‰VPPü;Ş«#'ÁÈƒb‡X`Ã¸Rëm5±rÓØÕ)tp¸c´8àB§¡Î×‘ÂÛN€¥‹¯v%‘œ¬.ñ\™½,¼²©Jœµ		 +¤U$ªqHµK°XJE$È=ta2[ĞéÀóWæ‘LIQH'Lp‰-Ğ<MsÌÜ4*A†ÁÊ,fìàsâV"0ƒ›1ÊDãE’sğØ]âÖÜ!¶usfŸM lè‹   T2lè‹íF÷l©<eä'}rÚÔå \VU¶° ôñe Ï¶Àª0ùæ Zá™ˆ>.@ËƒßCKÑ?åøû3P½äkfòÅğÁgRPñ}‡`d
+Ôu;ÈB±á›lGàÅ½p9"]à4‹¡]u•‘.…€|Ûbå»B‘K3ÖJíÄmó2‹SkCÕi)r LAîÿ‚óq}Óõè2°YdgÁ¹tñaAá<;ÀÔ2ß¬ÅYUQwúáiußĞı¬+«Û+Aß"a
+Œ½àcøzWª19¦ÍmI+^ğY½ †/R!E¿P=†İ l2ÜÜõ¹ÃTôæıÓn÷P™£ÀYs¾A“ ½w)±¯N_ñn¿0:=r†”0 áh–±îÕ@%ĞgÛ[ß-Ñ.2‡æP¾ğ=g´{Á&¡\;~}`E—p.¡€û±İ˜· -púóô!ËÇ=¡¬KZmá¨“€oJ	â0‘º‚\\L\î¨k;üÄúåNÃnö ­yŸ*hc¿q,!XÈLÖ°šñ)Gæ æa(uÛ_­ÀõXİ<…ºQf6øPÄFĞş/‹ç[‘AîÏ'¹ˆ’àõ.Uñe1hÀıj(ZğFŞu¸F!”ØéÇù nè‹   r2nè‹¯H÷lå<eBB}r Úå ŞáV¶(
+õñ<Ï

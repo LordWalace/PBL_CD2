@@ -1,0 +1,845 @@
+Analysis & Synthesis report for Pbl_Cachorro
+Tue Oct 29 19:11:24 2024
+Quartus Prime Version 23.1std.1 Build 993 05/14/2024 SC Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. General Register Statistics
+  9. Inverted Register Statistics
+ 10. Port Connectivity Checks: "Movimento:comb_14"
+ 11. Port Connectivity Checks: "Tempo_Movimento:comb_13|DivisorFrequencia:comb_6|Flip_Flop_T:comb_31"
+ 12. Port Connectivity Checks: "Tempo_Movimento:comb_13|DivisorFrequencia:comb_6|Flip_Flop_T:comb_30"
+ 13. Port Connectivity Checks: "Tempo_Movimento:comb_13|DivisorFrequencia:comb_6|Flip_Flop_T:comb_29"
+ 14. Port Connectivity Checks: "Tempo_Movimento:comb_13|DivisorFrequencia:comb_6|Flip_Flop_T:comb_28"
+ 15. Port Connectivity Checks: "Tempo_Movimento:comb_13|DivisorFrequencia:comb_6|Flip_Flop_T:comb_27"
+ 16. Port Connectivity Checks: "Tempo_Movimento:comb_13|DivisorFrequencia:comb_6|Flip_Flop_T:comb_26"
+ 17. Port Connectivity Checks: "Tempo_Movimento:comb_13|DivisorFrequencia:comb_6|Flip_Flop_T:comb_25"
+ 18. Port Connectivity Checks: "Tempo_Movimento:comb_13|DivisorFrequencia:comb_6|Flip_Flop_T:comb_24"
+ 19. Port Connectivity Checks: "Tempo_Movimento:comb_13|DivisorFrequencia:comb_6|Flip_Flop_T:comb_23"
+ 20. Port Connectivity Checks: "Tempo_Movimento:comb_13|DivisorFrequencia:comb_6|Flip_Flop_T:comb_22"
+ 21. Port Connectivity Checks: "Tempo_Movimento:comb_13|DivisorFrequencia:comb_6|Flip_Flop_T:comb_21"
+ 22. Port Connectivity Checks: "Tempo_Movimento:comb_13|DivisorFrequencia:comb_6|Flip_Flop_T:comb_20"
+ 23. Port Connectivity Checks: "Tempo_Movimento:comb_13|DivisorFrequencia:comb_6|Flip_Flop_T:comb_19"
+ 24. Port Connectivity Checks: "Tempo_Movimento:comb_13|DivisorFrequencia:comb_6|Flip_Flop_T:comb_18"
+ 25. Port Connectivity Checks: "Tempo_Movimento:comb_13|DivisorFrequencia:comb_6|Flip_Flop_T:comb_17"
+ 26. Port Connectivity Checks: "Tempo_Movimento:comb_13|DivisorFrequencia:comb_6|Flip_Flop_T:comb_16"
+ 27. Port Connectivity Checks: "Tempo_Movimento:comb_13|DivisorFrequencia:comb_6|Flip_Flop_T:comb_15"
+ 28. Port Connectivity Checks: "Tempo_Movimento:comb_13|DivisorFrequencia:comb_6|Flip_Flop_T:comb_14"
+ 29. Port Connectivity Checks: "Tempo_Movimento:comb_13|DivisorFrequencia:comb_6|Flip_Flop_T:comb_13"
+ 30. Port Connectivity Checks: "Tempo_Movimento:comb_13|DivisorFrequencia:comb_6|Flip_Flop_T:comb_12"
+ 31. Port Connectivity Checks: "Tempo_Movimento:comb_13|DivisorFrequencia:comb_6|Flip_Flop_T:comb_11"
+ 32. Port Connectivity Checks: "Tempo_Movimento:comb_13|DivisorFrequencia:comb_6|Flip_Flop_T:comb_10"
+ 33. Port Connectivity Checks: "Tempo_Movimento:comb_13|DivisorFrequencia:comb_6|Flip_Flop_T:comb_9"
+ 34. Port Connectivity Checks: "Tempo_Movimento:comb_13|DivisorFrequencia:comb_6|Flip_Flop_T:comb_8"
+ 35. Port Connectivity Checks: "Tempo_Movimento:comb_13|DivisorFrequencia:comb_6|Flip_Flop_T:comb_7"
+ 36. Port Connectivity Checks: "Tempo_Movimento:comb_13|DivisorFrequencia:comb_6|Flip_Flop_T:comb_6"
+ 37. Port Connectivity Checks: "Tempo_Movimento:comb_13|DivisorFrequencia:comb_6|Flip_Flop_T:comb_5"
+ 38. Port Connectivity Checks: "Tempo_Movimento:comb_13|DivisorFrequencia:comb_6|Flip_Flop_T:comb_4"
+ 39. Port Connectivity Checks: "Tempo_Movimento:comb_13|DivisorFrequencia:comb_6|Flip_Flop_T:comb_3"
+ 40. Port Connectivity Checks: "Tempo_Movimento:comb_13|DivisorFrequencia:comb_6"
+ 41. Port Connectivity Checks: "Tempo_Movimento:comb_13"
+ 42. Analysis & Synthesis Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2024  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and any partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details, at
+https://fpgasoftware.intel.com/eula.
+
+
+
++------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                 ;
++-----------------------------+------------------------------------------------+
+; Analysis & Synthesis Status ; Successful - Tue Oct 29 19:11:24 2024          ;
+; Quartus Prime Version       ; 23.1std.1 Build 993 05/14/2024 SC Lite Edition ;
+; Revision Name               ; Pbl_Cachorro                                   ;
+; Top-level Entity Name       ; Pbl_Cachorro                                   ;
+; Family                      ; MAX II                                         ;
+; Total logic elements        ; 51                                             ;
+; Total pins                  ; 19                                             ;
+; Total virtual pins          ; 0                                              ;
+; UFM blocks                  ; 0 / 1 ( 0 % )                                  ;
++-----------------------------+------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                              ;
++------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                           ; Setting            ; Default Value      ;
++------------------------------------------------------------------+--------------------+--------------------+
+; Device                                                           ; EPM240T100C5       ;                    ;
+; Top-level entity name                                            ; Pbl_Cachorro       ; Pbl_Cachorro       ;
+; Family name                                                      ; MAX II             ; Cyclone V          ;
+; Use smart compilation                                            ; Off                ; Off                ;
+; Enable parallel Assembler and Timing Analyzer during compilation ; On                 ; On                 ;
+; Enable compact report table                                      ; Off                ; Off                ;
+; Restructure Multiplexers                                         ; Auto               ; Auto               ;
+; Create Debugging Nodes for IP Cores                              ; Off                ; Off                ;
+; Preserve fewer node names                                        ; On                 ; On                 ;
+; Intel FPGA IP Evaluation Mode                                    ; Enable             ; Enable             ;
+; Verilog Version                                                  ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                     ; VHDL_1993          ; VHDL_1993          ;
+; State Machine Processing                                         ; Auto               ; Auto               ;
+; Safe State Machine                                               ; Off                ; Off                ;
+; Extract Verilog State Machines                                   ; On                 ; On                 ;
+; Extract VHDL State Machines                                      ; On                 ; On                 ;
+; Ignore Verilog initial constructs                                ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                       ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                   ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                          ; On                 ; On                 ;
+; Infer RAMs from Raw Logic                                        ; On                 ; On                 ;
+; Parallel Synthesis                                               ; On                 ; On                 ;
+; NOT Gate Push-Back                                               ; On                 ; On                 ;
+; Power-Up Don't Care                                              ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                     ; Off                ; Off                ;
+; Remove Duplicate Registers                                       ; On                 ; On                 ;
+; Ignore CARRY Buffers                                             ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                           ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                            ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                        ; Off                ; Off                ;
+; Ignore LCELL Buffers                                             ; Off                ; Off                ;
+; Ignore SOFT Buffers                                              ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                   ; Off                ; Off                ;
+; Optimization Technique                                           ; Balanced           ; Balanced           ;
+; Carry Chain Length                                               ; 70                 ; 70                 ;
+; Auto Carry Chains                                                ; On                 ; On                 ;
+; Auto Open-Drain Pins                                             ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                            ; Off                ; Off                ;
+; Auto Shift Register Replacement                                  ; Auto               ; Auto               ;
+; Allow Shift Register Merging across Hierarchies                  ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                    ; On                 ; On                 ;
+; Allow Synchronous Control Signals                                ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                           ; Off                ; Off                ;
+; Auto Resource Sharing                                            ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing              ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives                ; Off                ; Off                ;
+; Report Parameter Settings                                        ; On                 ; On                 ;
+; Report Source Assignments                                        ; On                 ; On                 ;
+; Report Connectivity Checks                                       ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                               ; Off                ; Off                ;
+; Synchronization Register Chain Length                            ; 2                  ; 2                  ;
+; Power Optimization During Synthesis                              ; Normal compilation ; Normal compilation ;
+; HDL message level                                                ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                  ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report         ; 5000               ; 5000               ;
+; Number of Swept Nodes Reported in Synthesis Report               ; 5000               ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report        ; 100                ; 100                ;
+; Clock MUX Protection                                             ; On                 ; On                 ;
+; Block Design Naming                                              ; Auto               ; Auto               ;
+; Synthesis Effort                                                 ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal     ; On                 ; On                 ;
+; Analysis & Synthesis Message Level                               ; Medium             ; Medium             ;
+; Disable Register Merging Across Hierarchies                      ; Auto               ; Auto               ;
++------------------------------------------------------------------+--------------------+--------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 16          ;
+; Maximum allowed            ; 16          ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 1           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
++----------------------------+-------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                             ;
++----------------------------------+-----------------+------------------------+------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path                               ; Library ;
++----------------------------------+-----------------+------------------------+------------------------------------------------------------+---------+
+; ../Pbl_Cachorro.v                ; yes             ; User Verilog HDL File  ; C:/Users/Walace/Documents/PBL-Cachorro/Pbl_Cachorro.v      ;         ;
+; DivisorFrequencia.v              ; yes             ; User Verilog HDL File  ; C:/Users/Walace/Documents/PBL-Cachorro/DivisorFrequencia.v ;         ;
+; Flip_Flop_T.v                    ; yes             ; User Verilog HDL File  ; C:/Users/Walace/Documents/PBL-Cachorro/Flip_Flop_T.v       ;         ;
+; Movimento.v                      ; yes             ; User Verilog HDL File  ; C:/Users/Walace/Documents/PBL-Cachorro/Movimento.v         ;         ;
+; Flip_Flop_D.v                    ; yes             ; User Verilog HDL File  ; C:/Users/Walace/Documents/PBL-Cachorro/Flip_Flop_D.v       ;         ;
+; Tempo_Movimento.v                ; yes             ; User Verilog HDL File  ; C:/Users/Walace/Documents/PBL-Cachorro/Tempo_Movimento.v   ;         ;
+; Mux.v                            ; yes             ; User Verilog HDL File  ; C:/Users/Walace/Documents/PBL-Cachorro/Mux.v               ;         ;
++----------------------------------+-----------------+------------------------+------------------------------------------------------------+---------+
+
+
++----------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                                                                          ;
++---------------------------------------------+------------------------------------------------------------------------+
+; Resource                                    ; Usage                                                                  ;
++---------------------------------------------+------------------------------------------------------------------------+
+; Total logic elements                        ; 51                                                                     ;
+;     -- Combinational with no register       ; 19                                                                     ;
+;     -- Register only                        ; 0                                                                      ;
+;     -- Combinational with a register        ; 32                                                                     ;
+;                                             ;                                                                        ;
+; Logic element usage by number of LUT inputs ;                                                                        ;
+;     -- 4 input functions                    ; 11                                                                     ;
+;     -- 3 input functions                    ; 6                                                                      ;
+;     -- 2 input functions                    ; 4                                                                      ;
+;     -- 1 input functions                    ; 30                                                                     ;
+;     -- 0 input functions                    ; 0                                                                      ;
+;                                             ;                                                                        ;
+; Logic elements by mode                      ;                                                                        ;
+;     -- normal mode                          ; 51                                                                     ;
+;     -- arithmetic mode                      ; 0                                                                      ;
+;     -- qfbk mode                            ; 0                                                                      ;
+;     -- register cascade mode                ; 0                                                                      ;
+;     -- synchronous clear/load mode          ; 0                                                                      ;
+;     -- asynchronous clear/load mode         ; 3                                                                      ;
+;                                             ;                                                                        ;
+; Total registers                             ; 32                                                                     ;
+; I/O pins                                    ; 19                                                                     ;
+; Maximum fan-out node                        ; Tempo_Movimento:comb_13|DivisorFrequencia:comb_6|Flip_Flop_T:comb_19|Q ;
+; Maximum fan-out                             ; 14                                                                     ;
+; Total fan-out                               ; 145                                                                    ;
+; Average fan-out                             ; 2.07                                                                   ;
++---------------------------------------------+------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                                                           ;
++----------------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+------------------------------------------------------------------------------------+-------------------+--------------+
+; Compilation Hierarchy Node       ; Logic Cells ; LC Registers ; UFM Blocks ; Pins ; Virtual Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; Carry Chain LCs ; Packed LCs ; Full Hierarchy Name                                                                ; Entity Name       ; Library Name ;
++----------------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+------------------------------------------------------------------------------------+-------------------+--------------+
+; |Pbl_Cachorro                    ; 51 (2)      ; 32           ; 0          ; 19   ; 0            ; 19 (2)       ; 0 (0)             ; 32 (0)           ; 0 (0)           ; 0 (0)      ; |Pbl_Cachorro                                                                      ; Pbl_Cachorro      ; work         ;
+;    |Movimento:comb_14|           ; 3 (0)       ; 3            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 3 (0)            ; 0 (0)           ; 0 (0)      ; |Pbl_Cachorro|Movimento:comb_14                                                    ; Movimento         ; work         ;
+;       |Flip_Flop_D:comb_3|       ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |Pbl_Cachorro|Movimento:comb_14|Flip_Flop_D:comb_3                                 ; Flip_Flop_D       ; work         ;
+;       |Flip_Flop_D:comb_4|       ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |Pbl_Cachorro|Movimento:comb_14|Flip_Flop_D:comb_4                                 ; Flip_Flop_D       ; work         ;
+;       |Flip_Flop_D:comb_5|       ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |Pbl_Cachorro|Movimento:comb_14|Flip_Flop_D:comb_5                                 ; Flip_Flop_D       ; work         ;
+;    |Mux:comb_15|                 ; 3 (3)       ; 0            ; 0          ; 0    ; 0            ; 3 (3)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |Pbl_Cachorro|Mux:comb_15                                                          ; Mux               ; work         ;
+;    |Mux:comb_16|                 ; 3 (3)       ; 0            ; 0          ; 0    ; 0            ; 3 (3)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |Pbl_Cachorro|Mux:comb_16                                                          ; Mux               ; work         ;
+;    |Mux:comb_17|                 ; 2 (2)       ; 0            ; 0          ; 0    ; 0            ; 2 (2)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |Pbl_Cachorro|Mux:comb_17                                                          ; Mux               ; work         ;
+;    |Mux:comb_18|                 ; 2 (2)       ; 0            ; 0          ; 0    ; 0            ; 2 (2)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |Pbl_Cachorro|Mux:comb_18                                                          ; Mux               ; work         ;
+;    |Mux:comb_19|                 ; 1 (1)       ; 0            ; 0          ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |Pbl_Cachorro|Mux:comb_19                                                          ; Mux               ; work         ;
+;    |Mux:comb_20|                 ; 3 (3)       ; 0            ; 0          ; 0    ; 0            ; 3 (3)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |Pbl_Cachorro|Mux:comb_20                                                          ; Mux               ; work         ;
+;    |Tempo_Movimento:comb_13|     ; 32 (3)      ; 29           ; 0          ; 0    ; 0            ; 3 (3)        ; 0 (0)             ; 29 (0)           ; 0 (0)           ; 0 (0)      ; |Pbl_Cachorro|Tempo_Movimento:comb_13                                              ; Tempo_Movimento   ; work         ;
+;       |DivisorFrequencia:comb_6| ; 29 (0)      ; 29           ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 29 (0)           ; 0 (0)           ; 0 (0)      ; |Pbl_Cachorro|Tempo_Movimento:comb_13|DivisorFrequencia:comb_6                     ; DivisorFrequencia ; work         ;
+;          |Flip_Flop_T:comb_10|   ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |Pbl_Cachorro|Tempo_Movimento:comb_13|DivisorFrequencia:comb_6|Flip_Flop_T:comb_10 ; Flip_Flop_T       ; work         ;
+;          |Flip_Flop_T:comb_11|   ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |Pbl_Cachorro|Tempo_Movimento:comb_13|DivisorFrequencia:comb_6|Flip_Flop_T:comb_11 ; Flip_Flop_T       ; work         ;
+;          |Flip_Flop_T:comb_12|   ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |Pbl_Cachorro|Tempo_Movimento:comb_13|DivisorFrequencia:comb_6|Flip_Flop_T:comb_12 ; Flip_Flop_T       ; work         ;
+;          |Flip_Flop_T:comb_13|   ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |Pbl_Cachorro|Tempo_Movimento:comb_13|DivisorFrequencia:comb_6|Flip_Flop_T:comb_13 ; Flip_Flop_T       ; work         ;
+;          |Flip_Flop_T:comb_14|   ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |Pbl_Cachorro|Tempo_Movimento:comb_13|DivisorFrequencia:comb_6|Flip_Flop_T:comb_14 ; Flip_Flop_T       ; work         ;
+;          |Flip_Flop_T:comb_15|   ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |Pbl_Cachorro|Tempo_Movimento:comb_13|DivisorFrequencia:comb_6|Flip_Flop_T:comb_15 ; Flip_Flop_T       ; work         ;
+;          |Flip_Flop_T:comb_16|   ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |Pbl_Cachorro|Tempo_Movimento:comb_13|DivisorFrequencia:comb_6|Flip_Flop_T:comb_16 ; Flip_Flop_T       ; work         ;
+;          |Flip_Flop_T:comb_17|   ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |Pbl_Cachorro|Tempo_Movimento:comb_13|DivisorFrequencia:comb_6|Flip_Flop_T:comb_17 ; Flip_Flop_T       ; work         ;
+;          |Flip_Flop_T:comb_18|   ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |Pbl_Cachorro|Tempo_Movimento:comb_13|DivisorFrequencia:comb_6|Flip_Flop_T:comb_18 ; Flip_Flop_T       ; work         ;
+;          |Flip_Flop_T:comb_19|   ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |Pbl_Cachorro|Tempo_Movimento:comb_13|DivisorFrequencia:comb_6|Flip_Flop_T:comb_19 ; Flip_Flop_T       ; work         ;
+;          |Flip_Flop_T:comb_20|   ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |Pbl_Cachorro|Tempo_Movimento:comb_13|DivisorFrequencia:comb_6|Flip_Flop_T:comb_20 ; Flip_Flop_T       ; work         ;
+;          |Flip_Flop_T:comb_21|   ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |Pbl_Cachorro|Tempo_Movimento:comb_13|DivisorFrequencia:comb_6|Flip_Flop_T:comb_21 ; Flip_Flop_T       ; work         ;
+;          |Flip_Flop_T:comb_22|   ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |Pbl_Cachorro|Tempo_Movimento:comb_13|DivisorFrequencia:comb_6|Flip_Flop_T:comb_22 ; Flip_Flop_T       ; work         ;
+;          |Flip_Flop_T:comb_23|   ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |Pbl_Cachorro|Tempo_Movimento:comb_13|DivisorFrequencia:comb_6|Flip_Flop_T:comb_23 ; Flip_Flop_T       ; work         ;
+;          |Flip_Flop_T:comb_24|   ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |Pbl_Cachorro|Tempo_Movimento:comb_13|DivisorFrequencia:comb_6|Flip_Flop_T:comb_24 ; Flip_Flop_T       ; work         ;
+;          |Flip_Flop_T:comb_25|   ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |Pbl_Cachorro|Tempo_Movimento:comb_13|DivisorFrequencia:comb_6|Flip_Flop_T:comb_25 ; Flip_Flop_T       ; work         ;
+;          |Flip_Flop_T:comb_26|   ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |Pbl_Cachorro|Tempo_Movimento:comb_13|DivisorFrequencia:comb_6|Flip_Flop_T:comb_26 ; Flip_Flop_T       ; work         ;
+;          |Flip_Flop_T:comb_27|   ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |Pbl_Cachorro|Tempo_Movimento:comb_13|DivisorFrequencia:comb_6|Flip_Flop_T:comb_27 ; Flip_Flop_T       ; work         ;
+;          |Flip_Flop_T:comb_28|   ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |Pbl_Cachorro|Tempo_Movimento:comb_13|DivisorFrequencia:comb_6|Flip_Flop_T:comb_28 ; Flip_Flop_T       ; work         ;
+;          |Flip_Flop_T:comb_29|   ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |Pbl_Cachorro|Tempo_Movimento:comb_13|DivisorFrequencia:comb_6|Flip_Flop_T:comb_29 ; Flip_Flop_T       ; work         ;
+;          |Flip_Flop_T:comb_30|   ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |Pbl_Cachorro|Tempo_Movimento:comb_13|DivisorFrequencia:comb_6|Flip_Flop_T:comb_30 ; Flip_Flop_T       ; work         ;
+;          |Flip_Flop_T:comb_31|   ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |Pbl_Cachorro|Tempo_Movimento:comb_13|DivisorFrequencia:comb_6|Flip_Flop_T:comb_31 ; Flip_Flop_T       ; work         ;
+;          |Flip_Flop_T:comb_3|    ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |Pbl_Cachorro|Tempo_Movimento:comb_13|DivisorFrequencia:comb_6|Flip_Flop_T:comb_3  ; Flip_Flop_T       ; work         ;
+;          |Flip_Flop_T:comb_4|    ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |Pbl_Cachorro|Tempo_Movimento:comb_13|DivisorFrequencia:comb_6|Flip_Flop_T:comb_4  ; Flip_Flop_T       ; work         ;
+;          |Flip_Flop_T:comb_5|    ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |Pbl_Cachorro|Tempo_Movimento:comb_13|DivisorFrequencia:comb_6|Flip_Flop_T:comb_5  ; Flip_Flop_T       ; work         ;
+;          |Flip_Flop_T:comb_6|    ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |Pbl_Cachorro|Tempo_Movimento:comb_13|DivisorFrequencia:comb_6|Flip_Flop_T:comb_6  ; Flip_Flop_T       ; work         ;
+;          |Flip_Flop_T:comb_7|    ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |Pbl_Cachorro|Tempo_Movimento:comb_13|DivisorFrequencia:comb_6|Flip_Flop_T:comb_7  ; Flip_Flop_T       ; work         ;
+;          |Flip_Flop_T:comb_8|    ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |Pbl_Cachorro|Tempo_Movimento:comb_13|DivisorFrequencia:comb_6|Flip_Flop_T:comb_8  ; Flip_Flop_T       ; work         ;
+;          |Flip_Flop_T:comb_9|    ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |Pbl_Cachorro|Tempo_Movimento:comb_13|DivisorFrequencia:comb_6|Flip_Flop_T:comb_9  ; Flip_Flop_T       ; work         ;
++----------------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+------------------------------------------------------------------------------------+-------------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 32    ;
+; Number of registers using Synchronous Clear  ; 0     ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 3     ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 0     ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++--------------------------------------------------+
+; Inverted Register Statistics                     ;
++----------------------------------------+---------+
+; Inverted Register                      ; Fan out ;
++----------------------------------------+---------+
+; Movimento:comb_14|Flip_Flop_D:comb_3|q ; 7       ;
+; Movimento:comb_14|Flip_Flop_D:comb_5|q ; 9       ;
+; Total number of inverted registers = 2 ;         ;
++----------------------------------------+---------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "Movimento:comb_14"                                                                                       ;
++------+--------+----------+----------------------------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                                                  ;
++------+--------+----------+----------------------------------------------------------------------------------------------------------+
+; Q1   ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed. ;
+; Q2   ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed. ;
+; Q3   ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+----------------------------------------------------------------------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "Tempo_Movimento:comb_13|DivisorFrequencia:comb_6|Flip_Flop_T:comb_31"                                                                                                                  ;
++-----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port      ; Type  ; Severity ; Details                                                                                                                                                                            ;
++-----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; reset     ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; reset[-1] ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
+; T         ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; T[-1]     ; Input ; Info     ; Stuck at VCC                                                                                                                                                                       ;
++-----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "Tempo_Movimento:comb_13|DivisorFrequencia:comb_6|Flip_Flop_T:comb_30"                                                                                                                  ;
++-----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port      ; Type  ; Severity ; Details                                                                                                                                                                            ;
++-----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; reset     ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; reset[-1] ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
+; T         ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; T[-1]     ; Input ; Info     ; Stuck at VCC                                                                                                                                                                       ;
++-----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "Tempo_Movimento:comb_13|DivisorFrequencia:comb_6|Flip_Flop_T:comb_29"                                                                                                                  ;
++-----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port      ; Type  ; Severity ; Details                                                                                                                                                                            ;
++-----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; reset     ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; reset[-1] ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
+; T         ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; T[-1]     ; Input ; Info     ; Stuck at VCC                                                                                                                                                                       ;
++-----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "Tempo_Movimento:comb_13|DivisorFrequencia:comb_6|Flip_Flop_T:comb_28"                                                                                                                  ;
++-----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port      ; Type  ; Severity ; Details                                                                                                                                                                            ;
++-----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; reset     ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; reset[-1] ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
+; T         ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; T[-1]     ; Input ; Info     ; Stuck at VCC                                                                                                                                                                       ;
++-----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "Tempo_Movimento:comb_13|DivisorFrequencia:comb_6|Flip_Flop_T:comb_27"                                                                                                                  ;
++-----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port      ; Type  ; Severity ; Details                                                                                                                                                                            ;
++-----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; reset     ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; reset[-1] ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
+; T         ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; T[-1]     ; Input ; Info     ; Stuck at VCC                                                                                                                                                                       ;
++-----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "Tempo_Movimento:comb_13|DivisorFrequencia:comb_6|Flip_Flop_T:comb_26"                                                                                                                  ;
++-----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port      ; Type  ; Severity ; Details                                                                                                                                                                            ;
++-----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; reset     ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; reset[-1] ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
+; T         ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; T[-1]     ; Input ; Info     ; Stuck at VCC                                                                                                                                                                       ;
++-----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "Tempo_Movimento:comb_13|DivisorFrequencia:comb_6|Flip_Flop_T:comb_25"                                                                                                                  ;
++-----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port      ; Type  ; Severity ; Details                                                                                                                                                                            ;
++-----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; reset     ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; reset[-1] ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
+; T         ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; T[-1]     ; Input ; Info     ; Stuck at VCC                                                                                                                                                                       ;
++-----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "Tempo_Movimento:comb_13|DivisorFrequencia:comb_6|Flip_Flop_T:comb_24"                                                                                                                  ;
++-----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port      ; Type  ; Severity ; Details                                                                                                                                                                            ;
++-----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; reset     ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; reset[-1] ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
+; T         ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; T[-1]     ; Input ; Info     ; Stuck at VCC                                                                                                                                                                       ;
++-----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "Tempo_Movimento:comb_13|DivisorFrequencia:comb_6|Flip_Flop_T:comb_23"                                                                                                                  ;
++-----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port      ; Type  ; Severity ; Details                                                                                                                                                                            ;
++-----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; reset     ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; reset[-1] ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
+; T         ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; T[-1]     ; Input ; Info     ; Stuck at VCC                                                                                                                                                                       ;
++-----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "Tempo_Movimento:comb_13|DivisorFrequencia:comb_6|Flip_Flop_T:comb_22"                                                                                                                  ;
++-----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port      ; Type  ; Severity ; Details                                                                                                                                                                            ;
++-----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; reset     ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; reset[-1] ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
+; T         ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; T[-1]     ; Input ; Info     ; Stuck at VCC                                                                                                                                                                       ;
++-----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "Tempo_Movimento:comb_13|DivisorFrequencia:comb_6|Flip_Flop_T:comb_21"                                                                                                                  ;
++-----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port      ; Type  ; Severity ; Details                                                                                                                                                                            ;
++-----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; reset     ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; reset[-1] ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
+; T         ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; T[-1]     ; Input ; Info     ; Stuck at VCC                                                                                                                                                                       ;
++-----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "Tempo_Movimento:comb_13|DivisorFrequencia:comb_6|Flip_Flop_T:comb_20"                                                                                                                  ;
++-----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port      ; Type  ; Severity ; Details                                                                                                                                                                            ;
++-----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; reset     ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; reset[-1] ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
+; T         ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; T[-1]     ; Input ; Info     ; Stuck at VCC                                                                                                                                                                       ;
++-----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "Tempo_Movimento:comb_13|DivisorFrequencia:comb_6|Flip_Flop_T:comb_19"                                                                                                                  ;
++-----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port      ; Type  ; Severity ; Details                                                                                                                                                                            ;
++-----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; reset     ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; reset[-1] ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
+; T         ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; T[-1]     ; Input ; Info     ; Stuck at VCC                                                                                                                                                                       ;
++-----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "Tempo_Movimento:comb_13|DivisorFrequencia:comb_6|Flip_Flop_T:comb_18"                                                                                                                  ;
++-----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port      ; Type  ; Severity ; Details                                                                                                                                                                            ;
++-----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; reset     ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; reset[-1] ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
+; T         ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; T[-1]     ; Input ; Info     ; Stuck at VCC                                                                                                                                                                       ;
++-----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "Tempo_Movimento:comb_13|DivisorFrequencia:comb_6|Flip_Flop_T:comb_17"                                                                                                                  ;
++-----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port      ; Type  ; Severity ; Details                                                                                                                                                                            ;
++-----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; reset     ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; reset[-1] ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
+; T         ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; T[-1]     ; Input ; Info     ; Stuck at VCC                                                                                                                                                                       ;
++-----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "Tempo_Movimento:comb_13|DivisorFrequencia:comb_6|Flip_Flop_T:comb_16"                                                                                                                  ;
++-----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port      ; Type  ; Severity ; Details                                                                                                                                                                            ;
++-----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; reset     ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; reset[-1] ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
+; T         ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; T[-1]     ; Input ; Info     ; Stuck at VCC                                                                                                                                                                       ;
++-----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "Tempo_Movimento:comb_13|DivisorFrequencia:comb_6|Flip_Flop_T:comb_15"                                                                                                                  ;
++-----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port      ; Type  ; Severity ; Details                                                                                                                                                                            ;
++-----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; reset     ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; reset[-1] ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
+; T         ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; T[-1]     ; Input ; Info     ; Stuck at VCC                                                                                                                                                                       ;
++-----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "Tempo_Movimento:comb_13|DivisorFrequencia:comb_6|Flip_Flop_T:comb_14"                                                                                                                  ;
++-----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port      ; Type  ; Severity ; Details                                                                                                                                                                            ;
++-----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; reset     ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; reset[-1] ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
+; T         ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; T[-1]     ; Input ; Info     ; Stuck at VCC                                                                                                                                                                       ;
++-----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "Tempo_Movimento:comb_13|DivisorFrequencia:comb_6|Flip_Flop_T:comb_13"                                                                                                                  ;
++-----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port      ; Type  ; Severity ; Details                                                                                                                                                                            ;
++-----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; reset     ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; reset[-1] ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
+; T         ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; T[-1]     ; Input ; Info     ; Stuck at VCC                                                                                                                                                                       ;
++-----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "Tempo_Movimento:comb_13|DivisorFrequencia:comb_6|Flip_Flop_T:comb_12"                                                                                                                  ;
++-----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port      ; Type  ; Severity ; Details                                                                                                                                                                            ;
++-----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; reset     ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; reset[-1] ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
+; T         ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; T[-1]     ; Input ; Info     ; Stuck at VCC                                                                                                                                                                       ;
++-----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "Tempo_Movimento:comb_13|DivisorFrequencia:comb_6|Flip_Flop_T:comb_11"                                                                                                                  ;
++-----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port      ; Type  ; Severity ; Details                                                                                                                                                                            ;
++-----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; reset     ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; reset[-1] ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
+; T         ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; T[-1]     ; Input ; Info     ; Stuck at VCC                                                                                                                                                                       ;
++-----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "Tempo_Movimento:comb_13|DivisorFrequencia:comb_6|Flip_Flop_T:comb_10"                                                                                                                  ;
++-----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port      ; Type  ; Severity ; Details                                                                                                                                                                            ;
++-----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; reset     ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; reset[-1] ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
+; T         ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; T[-1]     ; Input ; Info     ; Stuck at VCC                                                                                                                                                                       ;
++-----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "Tempo_Movimento:comb_13|DivisorFrequencia:comb_6|Flip_Flop_T:comb_9"                                                                                                                   ;
++-----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port      ; Type  ; Severity ; Details                                                                                                                                                                            ;
++-----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; reset     ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; reset[-1] ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
+; T         ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; T[-1]     ; Input ; Info     ; Stuck at VCC                                                                                                                                                                       ;
++-----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "Tempo_Movimento:comb_13|DivisorFrequencia:comb_6|Flip_Flop_T:comb_8"                                                                                                                   ;
++-----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port      ; Type  ; Severity ; Details                                                                                                                                                                            ;
++-----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; reset     ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; reset[-1] ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
+; T         ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; T[-1]     ; Input ; Info     ; Stuck at VCC                                                                                                                                                                       ;
++-----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "Tempo_Movimento:comb_13|DivisorFrequencia:comb_6|Flip_Flop_T:comb_7"                                                                                                                   ;
++-----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port      ; Type  ; Severity ; Details                                                                                                                                                                            ;
++-----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; reset     ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; reset[-1] ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
+; T         ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; T[-1]     ; Input ; Info     ; Stuck at VCC                                                                                                                                                                       ;
++-----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "Tempo_Movimento:comb_13|DivisorFrequencia:comb_6|Flip_Flop_T:comb_6"                                                                                                                   ;
++-----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port      ; Type  ; Severity ; Details                                                                                                                                                                            ;
++-----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; reset     ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; reset[-1] ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
+; T         ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; T[-1]     ; Input ; Info     ; Stuck at VCC                                                                                                                                                                       ;
++-----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "Tempo_Movimento:comb_13|DivisorFrequencia:comb_6|Flip_Flop_T:comb_5"                                                                                                                   ;
++-----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port      ; Type  ; Severity ; Details                                                                                                                                                                            ;
++-----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; reset     ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; reset[-1] ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
+; T         ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; T[-1]     ; Input ; Info     ; Stuck at VCC                                                                                                                                                                       ;
++-----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "Tempo_Movimento:comb_13|DivisorFrequencia:comb_6|Flip_Flop_T:comb_4"                                                                                                                   ;
++-----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port      ; Type  ; Severity ; Details                                                                                                                                                                            ;
++-----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; reset     ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; reset[-1] ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
+; T         ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; T[-1]     ; Input ; Info     ; Stuck at VCC                                                                                                                                                                       ;
++-----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "Tempo_Movimento:comb_13|DivisorFrequencia:comb_6|Flip_Flop_T:comb_3"                                                                                                                   ;
++-----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port      ; Type  ; Severity ; Details                                                                                                                                                                            ;
++-----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; reset     ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; reset[-1] ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
+; T         ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; T[-1]     ; Input ; Info     ; Stuck at VCC                                                                                                                                                                       ;
++-----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "Tempo_Movimento:comb_13|DivisorFrequencia:comb_6"                                           ;
++--------------+--------+----------+-------------------------------------------------------------------------------------+
+; Port         ; Type   ; Severity ; Details                                                                             ;
++--------------+--------+----------+-------------------------------------------------------------------------------------+
+; Frequencia1s ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++--------------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "Tempo_Movimento:comb_13"                                                            ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Erro ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus Prime Analysis & Synthesis
+    Info: Version 23.1std.1 Build 993 05/14/2024 SC Lite Edition
+    Info: Processing started: Tue Oct 29 19:11:09 2024
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Pbl_Cachorro -c Pbl_Cachorro
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info (20030): Parallel compilation is enabled and will use 16 of the 16 processors detected
+Info (12021): Found 1 design units, including 1 entities, in source file pbl_cachorro.v
+    Info (12023): Found entity 1: Pbl_Cachorro File: C:/Users/Walace/Documents/PBL-Cachorro/Pbl_Cachorro.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file divisorfrequencia.v
+    Info (12023): Found entity 1: DivisorFrequencia File: C:/Users/Walace/Documents/PBL-Cachorro/DivisorFrequencia.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file flip_flop_t.v
+    Info (12023): Found entity 1: Flip_Flop_T File: C:/Users/Walace/Documents/PBL-Cachorro/Flip_Flop_T.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file movimento.v
+    Info (12023): Found entity 1: Movimento File: C:/Users/Walace/Documents/PBL-Cachorro/Movimento.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file flip_flop_d.v
+    Info (12023): Found entity 1: Flip_Flop_D File: C:/Users/Walace/Documents/PBL-Cachorro/Flip_Flop_D.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file tempo_movimento.v
+    Info (12023): Found entity 1: Tempo_Movimento File: C:/Users/Walace/Documents/PBL-Cachorro/Tempo_Movimento.v Line: 1
+Warning (12090): Entity "Mux" obtained from "Mux.v" instead of from Quartus Prime megafunction library File: C:/Users/Walace/Documents/PBL-Cachorro/Mux.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file mux.v
+    Info (12023): Found entity 1: Mux File: C:/Users/Walace/Documents/PBL-Cachorro/Mux.v Line: 1
+Warning (10236): Verilog HDL Implicit Net warning at Pbl_Cachorro.v(10): created implicit net for "notFS" File: C:/Users/Walace/Documents/PBL-Cachorro/Pbl_Cachorro.v Line: 10
+Warning (10236): Verilog HDL Implicit Net warning at Pbl_Cachorro.v(10): created implicit net for "FS" File: C:/Users/Walace/Documents/PBL-Cachorro/Pbl_Cachorro.v Line: 10
+Warning (10236): Verilog HDL Implicit Net warning at Pbl_Cachorro.v(11): created implicit net for "notLD" File: C:/Users/Walace/Documents/PBL-Cachorro/Pbl_Cachorro.v Line: 11
+Warning (10236): Verilog HDL Implicit Net warning at Pbl_Cachorro.v(12): created implicit net for "notBotao" File: C:/Users/Walace/Documents/PBL-Cachorro/Pbl_Cachorro.v Line: 12
+Warning (10236): Verilog HDL Implicit Net warning at Pbl_Cachorro.v(15): created implicit net for "aux1" File: C:/Users/Walace/Documents/PBL-Cachorro/Pbl_Cachorro.v Line: 15
+Warning (10236): Verilog HDL Implicit Net warning at Pbl_Cachorro.v(16): created implicit net for "aux2" File: C:/Users/Walace/Documents/PBL-Cachorro/Pbl_Cachorro.v Line: 16
+Warning (10236): Verilog HDL Implicit Net warning at Pbl_Cachorro.v(23): created implicit net for "TA7" File: C:/Users/Walace/Documents/PBL-Cachorro/Pbl_Cachorro.v Line: 23
+Warning (10236): Verilog HDL Implicit Net warning at Pbl_Cachorro.v(23): created implicit net for "TB7" File: C:/Users/Walace/Documents/PBL-Cachorro/Pbl_Cachorro.v Line: 23
+Warning (10236): Verilog HDL Implicit Net warning at Pbl_Cachorro.v(23): created implicit net for "TC7" File: C:/Users/Walace/Documents/PBL-Cachorro/Pbl_Cachorro.v Line: 23
+Warning (10236): Verilog HDL Implicit Net warning at Pbl_Cachorro.v(23): created implicit net for "TD7" File: C:/Users/Walace/Documents/PBL-Cachorro/Pbl_Cachorro.v Line: 23
+Warning (10236): Verilog HDL Implicit Net warning at Pbl_Cachorro.v(23): created implicit net for "TE7" File: C:/Users/Walace/Documents/PBL-Cachorro/Pbl_Cachorro.v Line: 23
+Warning (10236): Verilog HDL Implicit Net warning at Pbl_Cachorro.v(23): created implicit net for "TF7" File: C:/Users/Walace/Documents/PBL-Cachorro/Pbl_Cachorro.v Line: 23
+Warning (10236): Verilog HDL Implicit Net warning at Pbl_Cachorro.v(23): created implicit net for "TG7" File: C:/Users/Walace/Documents/PBL-Cachorro/Pbl_Cachorro.v Line: 23
+Warning (10236): Verilog HDL Implicit Net warning at Pbl_Cachorro.v(23): created implicit net for "TP7" File: C:/Users/Walace/Documents/PBL-Cachorro/Pbl_Cachorro.v Line: 23
+Warning (10236): Verilog HDL Implicit Net warning at Pbl_Cachorro.v(23): created implicit net for "Tempo" File: C:/Users/Walace/Documents/PBL-Cachorro/Pbl_Cachorro.v Line: 23
+Warning (10236): Verilog HDL Implicit Net warning at Pbl_Cachorro.v(23): created implicit net for "Erro" File: C:/Users/Walace/Documents/PBL-Cachorro/Pbl_Cachorro.v Line: 23
+Warning (10236): Verilog HDL Implicit Net warning at Pbl_Cachorro.v(25): created implicit net for "reset" File: C:/Users/Walace/Documents/PBL-Cachorro/Pbl_Cachorro.v Line: 25
+Warning (10236): Verilog HDL Implicit Net warning at Pbl_Cachorro.v(25): created implicit net for "preset" File: C:/Users/Walace/Documents/PBL-Cachorro/Pbl_Cachorro.v Line: 25
+Warning (10236): Verilog HDL Implicit Net warning at Pbl_Cachorro.v(25): created implicit net for "A7" File: C:/Users/Walace/Documents/PBL-Cachorro/Pbl_Cachorro.v Line: 25
+Warning (10236): Verilog HDL Implicit Net warning at Pbl_Cachorro.v(25): created implicit net for "B7" File: C:/Users/Walace/Documents/PBL-Cachorro/Pbl_Cachorro.v Line: 25
+Warning (10236): Verilog HDL Implicit Net warning at Pbl_Cachorro.v(25): created implicit net for "C7" File: C:/Users/Walace/Documents/PBL-Cachorro/Pbl_Cachorro.v Line: 25
+Warning (10236): Verilog HDL Implicit Net warning at Pbl_Cachorro.v(25): created implicit net for "D7" File: C:/Users/Walace/Documents/PBL-Cachorro/Pbl_Cachorro.v Line: 25
+Warning (10236): Verilog HDL Implicit Net warning at Pbl_Cachorro.v(25): created implicit net for "E7" File: C:/Users/Walace/Documents/PBL-Cachorro/Pbl_Cachorro.v Line: 25
+Warning (10236): Verilog HDL Implicit Net warning at Pbl_Cachorro.v(25): created implicit net for "F7" File: C:/Users/Walace/Documents/PBL-Cachorro/Pbl_Cachorro.v Line: 25
+Warning (10236): Verilog HDL Implicit Net warning at Pbl_Cachorro.v(25): created implicit net for "G7" File: C:/Users/Walace/Documents/PBL-Cachorro/Pbl_Cachorro.v Line: 25
+Warning (10236): Verilog HDL Implicit Net warning at Pbl_Cachorro.v(25): created implicit net for "P7" File: C:/Users/Walace/Documents/PBL-Cachorro/Pbl_Cachorro.v Line: 25
+Warning (10236): Verilog HDL Implicit Net warning at DivisorFrequencia.v(6): created implicit net for "Q" File: C:/Users/Walace/Documents/PBL-Cachorro/DivisorFrequencia.v Line: 6
+Warning (10236): Verilog HDL Implicit Net warning at DivisorFrequencia.v(7): created implicit net for "Q0" File: C:/Users/Walace/Documents/PBL-Cachorro/DivisorFrequencia.v Line: 7
+Warning (10236): Verilog HDL Implicit Net warning at DivisorFrequencia.v(8): created implicit net for "Q1" File: C:/Users/Walace/Documents/PBL-Cachorro/DivisorFrequencia.v Line: 8
+Warning (10236): Verilog HDL Implicit Net warning at DivisorFrequencia.v(9): created implicit net for "Q2" File: C:/Users/Walace/Documents/PBL-Cachorro/DivisorFrequencia.v Line: 9
+Warning (10236): Verilog HDL Implicit Net warning at DivisorFrequencia.v(10): created implicit net for "Q3" File: C:/Users/Walace/Documents/PBL-Cachorro/DivisorFrequencia.v Line: 10
+Warning (10236): Verilog HDL Implicit Net warning at DivisorFrequencia.v(11): created implicit net for "Q4" File: C:/Users/Walace/Documents/PBL-Cachorro/DivisorFrequencia.v Line: 11
+Warning (10236): Verilog HDL Implicit Net warning at DivisorFrequencia.v(12): created implicit net for "Q5" File: C:/Users/Walace/Documents/PBL-Cachorro/DivisorFrequencia.v Line: 12
+Warning (10236): Verilog HDL Implicit Net warning at DivisorFrequencia.v(13): created implicit net for "Q6" File: C:/Users/Walace/Documents/PBL-Cachorro/DivisorFrequencia.v Line: 13
+Warning (10236): Verilog HDL Implicit Net warning at DivisorFrequencia.v(14): created implicit net for "Q7" File: C:/Users/Walace/Documents/PBL-Cachorro/DivisorFrequencia.v Line: 14
+Warning (10236): Verilog HDL Implicit Net warning at DivisorFrequencia.v(15): created implicit net for "Q8" File: C:/Users/Walace/Documents/PBL-Cachorro/DivisorFrequencia.v Line: 15
+Warning (10236): Verilog HDL Implicit Net warning at DivisorFrequencia.v(16): created implicit net for "Q9" File: C:/Users/Walace/Documents/PBL-Cachorro/DivisorFrequencia.v Line: 16
+Warning (10236): Verilog HDL Implicit Net warning at DivisorFrequencia.v(17): created implicit net for "Q10" File: C:/Users/Walace/Documents/PBL-Cachorro/DivisorFrequencia.v Line: 17
+Warning (10236): Verilog HDL Implicit Net warning at DivisorFrequencia.v(18): created implicit net for "Q11" File: C:/Users/Walace/Documents/PBL-Cachorro/DivisorFrequencia.v Line: 18
+Warning (10236): Verilog HDL Implicit Net warning at DivisorFrequencia.v(19): created implicit net for "Q12" File: C:/Users/Walace/Documents/PBL-Cachorro/DivisorFrequencia.v Line: 19
+Warning (10236): Verilog HDL Implicit Net warning at DivisorFrequencia.v(20): created implicit net for "Q13" File: C:/Users/Walace/Documents/PBL-Cachorro/DivisorFrequencia.v Line: 20
+Warning (10236): Verilog HDL Implicit Net warning at DivisorFrequencia.v(21): created implicit net for "Q14" File: C:/Users/Walace/Documents/PBL-Cachorro/DivisorFrequencia.v Line: 21
+Warning (10236): Verilog HDL Implicit Net warning at DivisorFrequencia.v(23): created implicit net for "Q16" File: C:/Users/Walace/Documents/PBL-Cachorro/DivisorFrequencia.v Line: 23
+Warning (10236): Verilog HDL Implicit Net warning at DivisorFrequencia.v(24): created implicit net for "Q17" File: C:/Users/Walace/Documents/PBL-Cachorro/DivisorFrequencia.v Line: 24
+Warning (10236): Verilog HDL Implicit Net warning at DivisorFrequencia.v(25): created implicit net for "Q18" File: C:/Users/Walace/Documents/PBL-Cachorro/DivisorFrequencia.v Line: 25
+Warning (10236): Verilog HDL Implicit Net warning at DivisorFrequencia.v(26): created implicit net for "Q19" File: C:/Users/Walace/Documents/PBL-Cachorro/DivisorFrequencia.v Line: 26
+Warning (10236): Verilog HDL Implicit Net warning at DivisorFrequencia.v(27): created implicit net for "Q20" File: C:/Users/Walace/Documents/PBL-Cachorro/DivisorFrequencia.v Line: 27
+Warning (10236): Verilog HDL Implicit Net warning at DivisorFrequencia.v(28): created implicit net for "Q21" File: C:/Users/Walace/Documents/PBL-Cachorro/DivisorFrequencia.v Line: 28
+Warning (10236): Verilog HDL Implicit Net warning at DivisorFrequencia.v(29): created implicit net for "Q22" File: C:/Users/Walace/Documents/PBL-Cachorro/DivisorFrequencia.v Line: 29
+Warning (10236): Verilog HDL Implicit Net warning at DivisorFrequencia.v(30): created implicit net for "Q23" File: C:/Users/Walace/Documents/PBL-Cachorro/DivisorFrequencia.v Line: 30
+Warning (10236): Verilog HDL Implicit Net warning at Movimento.v(7): created implicit net for "M1" File: C:/Users/Walace/Documents/PBL-Cachorro/Movimento.v Line: 7
+Warning (10236): Verilog HDL Implicit Net warning at Movimento.v(8): created implicit net for "M2" File: C:/Users/Walace/Documents/PBL-Cachorro/Movimento.v Line: 8
+Warning (10236): Verilog HDL Implicit Net warning at Movimento.v(9): created implicit net for "M3" File: C:/Users/Walace/Documents/PBL-Cachorro/Movimento.v Line: 9
+Warning (10236): Verilog HDL Implicit Net warning at Movimento.v(12): created implicit net for "notM1" File: C:/Users/Walace/Documents/PBL-Cachorro/Movimento.v Line: 12
+Warning (10236): Verilog HDL Implicit Net warning at Movimento.v(13): created implicit net for "notM2" File: C:/Users/Walace/Documents/PBL-Cachorro/Movimento.v Line: 13
+Warning (10236): Verilog HDL Implicit Net warning at Movimento.v(14): created implicit net for "notM3" File: C:/Users/Walace/Documents/PBL-Cachorro/Movimento.v Line: 14
+Warning (10236): Verilog HDL Implicit Net warning at Movimento.v(15): created implicit net for "notQ1" File: C:/Users/Walace/Documents/PBL-Cachorro/Movimento.v Line: 15
+Warning (10236): Verilog HDL Implicit Net warning at Movimento.v(16): created implicit net for "notQ2" File: C:/Users/Walace/Documents/PBL-Cachorro/Movimento.v Line: 16
+Warning (10236): Verilog HDL Implicit Net warning at Movimento.v(17): created implicit net for "notQ3" File: C:/Users/Walace/Documents/PBL-Cachorro/Movimento.v Line: 17
+Warning (10236): Verilog HDL Implicit Net warning at Tempo_Movimento.v(7): created implicit net for "not2s" File: C:/Users/Walace/Documents/PBL-Cachorro/Tempo_Movimento.v Line: 7
+Warning (10236): Verilog HDL Implicit Net warning at Tempo_Movimento.v(8): created implicit net for "not4s" File: C:/Users/Walace/Documents/PBL-Cachorro/Tempo_Movimento.v Line: 8
+Warning (10236): Verilog HDL Implicit Net warning at Tempo_Movimento.v(9): created implicit net for "not8s" File: C:/Users/Walace/Documents/PBL-Cachorro/Tempo_Movimento.v Line: 9
+Warning (10236): Verilog HDL Implicit Net warning at Tempo_Movimento.v(15): created implicit net for "F1s" File: C:/Users/Walace/Documents/PBL-Cachorro/Tempo_Movimento.v Line: 15
+Warning (10236): Verilog HDL Implicit Net warning at Tempo_Movimento.v(15): created implicit net for "F8s" File: C:/Users/Walace/Documents/PBL-Cachorro/Tempo_Movimento.v Line: 15
+Warning (10236): Verilog HDL Implicit Net warning at Tempo_Movimento.v(15): created implicit net for "F4s" File: C:/Users/Walace/Documents/PBL-Cachorro/Tempo_Movimento.v Line: 15
+Warning (10236): Verilog HDL Implicit Net warning at Tempo_Movimento.v(15): created implicit net for "F2s" File: C:/Users/Walace/Documents/PBL-Cachorro/Tempo_Movimento.v Line: 15
+Warning (10236): Verilog HDL Implicit Net warning at Mux.v(9): created implicit net for "notSeletor" File: C:/Users/Walace/Documents/PBL-Cachorro/Mux.v Line: 9
+Warning (10236): Verilog HDL Implicit Net warning at Mux.v(12): created implicit net for "aux0" File: C:/Users/Walace/Documents/PBL-Cachorro/Mux.v Line: 12
+Warning (10236): Verilog HDL Implicit Net warning at Mux.v(13): created implicit net for "aux1" File: C:/Users/Walace/Documents/PBL-Cachorro/Mux.v Line: 13
+Critical Warning (10846): Verilog HDL Instantiation warning at DivisorFrequencia.v(6): instance has no name File: C:/Users/Walace/Documents/PBL-Cachorro/DivisorFrequencia.v Line: 6
+Critical Warning (10846): Verilog HDL Instantiation warning at DivisorFrequencia.v(7): instance has no name File: C:/Users/Walace/Documents/PBL-Cachorro/DivisorFrequencia.v Line: 7
+Critical Warning (10846): Verilog HDL Instantiation warning at DivisorFrequencia.v(8): instance has no name File: C:/Users/Walace/Documents/PBL-Cachorro/DivisorFrequencia.v Line: 8
+Critical Warning (10846): Verilog HDL Instantiation warning at DivisorFrequencia.v(9): instance has no name File: C:/Users/Walace/Documents/PBL-Cachorro/DivisorFrequencia.v Line: 9
+Critical Warning (10846): Verilog HDL Instantiation warning at DivisorFrequencia.v(10): instance has no name File: C:/Users/Walace/Documents/PBL-Cachorro/DivisorFrequencia.v Line: 10
+Critical Warning (10846): Verilog HDL Instantiation warning at DivisorFrequencia.v(11): instance has no name File: C:/Users/Walace/Documents/PBL-Cachorro/DivisorFrequencia.v Line: 11
+Critical Warning (10846): Verilog HDL Instantiation warning at DivisorFrequencia.v(12): instance has no name File: C:/Users/Walace/Documents/PBL-Cachorro/DivisorFrequencia.v Line: 12
+Critical Warning (10846): Verilog HDL Instantiation warning at DivisorFrequencia.v(13): instance has no name File: C:/Users/Walace/Documents/PBL-Cachorro/DivisorFrequencia.v Line: 13
+Critical Warning (10846): Verilog HDL Instantiation warning at DivisorFrequencia.v(14): instance has no name File: C:/Users/Walace/Documents/PBL-Cachorro/DivisorFrequencia.v Line: 14
+Critical Warning (10846): Verilog HDL Instantiation warning at DivisorFrequencia.v(15): instance has no name File: C:/Users/Walace/Documents/PBL-Cachorro/DivisorFrequencia.v Line: 15
+Critical Warning (10846): Verilog HDL Instantiation warning at DivisorFrequencia.v(16): instance has no name File: C:/Users/Walace/Documents/PBL-Cachorro/DivisorFrequencia.v Line: 16
+Critical Warning (10846): Verilog HDL Instantiation warning at DivisorFrequencia.v(17): instance has no name File: C:/Users/Walace/Documents/PBL-Cachorro/DivisorFrequencia.v Line: 17
+Critical Warning (10846): Verilog HDL Instantiation warning at DivisorFrequencia.v(18): instance has no name File: C:/Users/Walace/Documents/PBL-Cachorro/DivisorFrequencia.v Line: 18
+Critical Warning (10846): Verilog HDL Instantiation warning at DivisorFrequencia.v(19): instance has no name File: C:/Users/Walace/Documents/PBL-Cachorro/DivisorFrequencia.v Line: 19
+Critical Warning (10846): Verilog HDL Instantiation warning at DivisorFrequencia.v(20): instance has no name File: C:/Users/Walace/Documents/PBL-Cachorro/DivisorFrequencia.v Line: 20
+Critical Warning (10846): Verilog HDL Instantiation warning at DivisorFrequencia.v(21): instance has no name File: C:/Users/Walace/Documents/PBL-Cachorro/DivisorFrequencia.v Line: 21
+Critical Warning (10846): Verilog HDL Instantiation warning at DivisorFrequencia.v(22): instance has no name File: C:/Users/Walace/Documents/PBL-Cachorro/DivisorFrequencia.v Line: 22
+Critical Warning (10846): Verilog HDL Instantiation warning at DivisorFrequencia.v(23): instance has no name File: C:/Users/Walace/Documents/PBL-Cachorro/DivisorFrequencia.v Line: 23
+Critical Warning (10846): Verilog HDL Instantiation warning at DivisorFrequencia.v(24): instance has no name File: C:/Users/Walace/Documents/PBL-Cachorro/DivisorFrequencia.v Line: 24
+Critical Warning (10846): Verilog HDL Instantiation warning at DivisorFrequencia.v(25): instance has no name File: C:/Users/Walace/Documents/PBL-Cachorro/DivisorFrequencia.v Line: 25
+Critical Warning (10846): Verilog HDL Instantiation warning at DivisorFrequencia.v(26): instance has no name File: C:/Users/Walace/Documents/PBL-Cachorro/DivisorFrequencia.v Line: 26
+Critical Warning (10846): Verilog HDL Instantiation warning at DivisorFrequencia.v(27): instance has no name File: C:/Users/Walace/Documents/PBL-Cachorro/DivisorFrequencia.v Line: 27
+Critical Warning (10846): Verilog HDL Instantiation warning at DivisorFrequencia.v(28): instance has no name File: C:/Users/Walace/Documents/PBL-Cachorro/DivisorFrequencia.v Line: 28
+Critical Warning (10846): Verilog HDL Instantiation warning at DivisorFrequencia.v(29): instance has no name File: C:/Users/Walace/Documents/PBL-Cachorro/DivisorFrequencia.v Line: 29
+Critical Warning (10846): Verilog HDL Instantiation warning at DivisorFrequencia.v(30): instance has no name File: C:/Users/Walace/Documents/PBL-Cachorro/DivisorFrequencia.v Line: 30
+Critical Warning (10846): Verilog HDL Instantiation warning at DivisorFrequencia.v(31): instance has no name File: C:/Users/Walace/Documents/PBL-Cachorro/DivisorFrequencia.v Line: 31
+Critical Warning (10846): Verilog HDL Instantiation warning at DivisorFrequencia.v(32): instance has no name File: C:/Users/Walace/Documents/PBL-Cachorro/DivisorFrequencia.v Line: 32
+Critical Warning (10846): Verilog HDL Instantiation warning at DivisorFrequencia.v(33): instance has no name File: C:/Users/Walace/Documents/PBL-Cachorro/DivisorFrequencia.v Line: 33
+Critical Warning (10846): Verilog HDL Instantiation warning at DivisorFrequencia.v(34): instance has no name File: C:/Users/Walace/Documents/PBL-Cachorro/DivisorFrequencia.v Line: 34
+Critical Warning (10846): Verilog HDL Instantiation warning at Tempo_Movimento.v(15): instance has no name File: C:/Users/Walace/Documents/PBL-Cachorro/Tempo_Movimento.v Line: 15
+Critical Warning (10846): Verilog HDL Instantiation warning at Pbl_Cachorro.v(23): instance has no name File: C:/Users/Walace/Documents/PBL-Cachorro/Pbl_Cachorro.v Line: 23
+Critical Warning (10846): Verilog HDL Instantiation warning at Movimento.v(7): instance has no name File: C:/Users/Walace/Documents/PBL-Cachorro/Movimento.v Line: 7
+Critical Warning (10846): Verilog HDL Instantiation warning at Movimento.v(8): instance has no name File: C:/Users/Walace/Documents/PBL-Cachorro/Movimento.v Line: 8
+Critical Warning (10846): Verilog HDL Instantiation warning at Movimento.v(9): instance has no name File: C:/Users/Walace/Documents/PBL-Cachorro/Movimento.v Line: 9
+Critical Warning (10846): Verilog HDL Instantiation warning at Pbl_Cachorro.v(25): instance has no name File: C:/Users/Walace/Documents/PBL-Cachorro/Pbl_Cachorro.v Line: 25
+Critical Warning (10846): Verilog HDL Instantiation warning at Pbl_Cachorro.v(28): instance has no name File: C:/Users/Walace/Documents/PBL-Cachorro/Pbl_Cachorro.v Line: 28
+Critical Warning (10846): Verilog HDL Instantiation warning at Pbl_Cachorro.v(29): instance has no name File: C:/Users/Walace/Documents/PBL-Cachorro/Pbl_Cachorro.v Line: 29
+Critical Warning (10846): Verilog HDL Instantiation warning at Pbl_Cachorro.v(30): instance has no name File: C:/Users/Walace/Documents/PBL-Cachorro/Pbl_Cachorro.v Line: 30
+Critical Warning (10846): Verilog HDL Instantiation warning at Pbl_Cachorro.v(31): instance has no name File: C:/Users/Walace/Documents/PBL-Cachorro/Pbl_Cachorro.v Line: 31
+Critical Warning (10846): Verilog HDL Instantiation warning at Pbl_Cachorro.v(32): instance has no name File: C:/Users/Walace/Documents/PBL-Cachorro/Pbl_Cachorro.v Line: 32
+Critical Warning (10846): Verilog HDL Instantiation warning at Pbl_Cachorro.v(33): instance has no name File: C:/Users/Walace/Documents/PBL-Cachorro/Pbl_Cachorro.v Line: 33
+Critical Warning (10846): Verilog HDL Instantiation warning at Pbl_Cachorro.v(34): instance has no name File: C:/Users/Walace/Documents/PBL-Cachorro/Pbl_Cachorro.v Line: 34
+Critical Warning (10846): Verilog HDL Instantiation warning at Pbl_Cachorro.v(35): instance has no name File: C:/Users/Walace/Documents/PBL-Cachorro/Pbl_Cachorro.v Line: 35
+Info (12127): Elaborating entity "Pbl_Cachorro" for the top level hierarchy
+Warning (10739): Verilog HDL warning at Pbl_Cachorro.v(8): actual bit length 32 differs from formal bit length 1 File: C:/Users/Walace/Documents/PBL-Cachorro/Pbl_Cachorro.v Line: 8
+Warning (10739): Verilog HDL warning at Pbl_Cachorro.v(9): actual bit length 32 differs from formal bit length 1 File: C:/Users/Walace/Documents/PBL-Cachorro/Pbl_Cachorro.v Line: 9
+Info (12128): Elaborating entity "Tempo_Movimento" for hierarchy "Tempo_Movimento:comb_13" File: C:/Users/Walace/Documents/PBL-Cachorro/Pbl_Cachorro.v Line: 23
+Warning (10739): Verilog HDL warning at Tempo_Movimento.v(57): actual bit length 32 differs from formal bit length 1 File: C:/Users/Walace/Documents/PBL-Cachorro/Tempo_Movimento.v Line: 57
+Warning (10739): Verilog HDL warning at Tempo_Movimento.v(60): actual bit length 32 differs from formal bit length 1 File: C:/Users/Walace/Documents/PBL-Cachorro/Tempo_Movimento.v Line: 60
+Warning (10034): Output port "Erro" at Tempo_Movimento.v(4) has no driver File: C:/Users/Walace/Documents/PBL-Cachorro/Tempo_Movimento.v Line: 4
+Info (12128): Elaborating entity "DivisorFrequencia" for hierarchy "Tempo_Movimento:comb_13|DivisorFrequencia:comb_6" File: C:/Users/Walace/Documents/PBL-Cachorro/Tempo_Movimento.v Line: 15
+Info (12128): Elaborating entity "Flip_Flop_T" for hierarchy "Tempo_Movimento:comb_13|DivisorFrequencia:comb_6|Flip_Flop_T:comb_3" File: C:/Users/Walace/Documents/PBL-Cachorro/DivisorFrequencia.v Line: 6
+Info (12128): Elaborating entity "Movimento" for hierarchy "Movimento:comb_14" File: C:/Users/Walace/Documents/PBL-Cachorro/Pbl_Cachorro.v Line: 25
+Warning (10739): Verilog HDL warning at Movimento.v(67): actual bit length 32 differs from formal bit length 1 File: C:/Users/Walace/Documents/PBL-Cachorro/Movimento.v Line: 67
+Info (12128): Elaborating entity "Flip_Flop_D" for hierarchy "Movimento:comb_14|Flip_Flop_D:comb_3" File: C:/Users/Walace/Documents/PBL-Cachorro/Movimento.v Line: 7
+Info (12128): Elaborating entity "Mux" for hierarchy "Mux:comb_15" File: C:/Users/Walace/Documents/PBL-Cachorro/Pbl_Cachorro.v Line: 28
+Warning (12241): 30 hierarchies have connectivity warnings - see the Connectivity Checks report folder
+Warning (13024): Output pins are stuck at VCC or GND
+    Warning (13410): Pin "SP" is stuck at VCC File: C:/Users/Walace/Documents/PBL-Cachorro/Pbl_Cachorro.v Line: 4
+    Warning (13410): Pin "Disp2" is stuck at VCC File: C:/Users/Walace/Documents/PBL-Cachorro/Pbl_Cachorro.v Line: 5
+    Warning (13410): Pin "Disp3" is stuck at VCC File: C:/Users/Walace/Documents/PBL-Cachorro/Pbl_Cachorro.v Line: 5
+Info (18000): Registers with preset signals will power-up high File: C:/Users/Walace/Documents/PBL-Cachorro/Flip_Flop_D.v Line: 3
+Info (21057): Implemented 70 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 6 input pins
+    Info (21059): Implemented 13 output pins
+    Info (21061): Implemented 51 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 125 warnings
+    Info: Peak virtual memory: 4709 megabytes
+    Info: Processing ended: Tue Oct 29 19:11:25 2024
+    Info: Elapsed time: 00:00:16
+    Info: Total CPU time (on all processors): 00:00:25
+
+

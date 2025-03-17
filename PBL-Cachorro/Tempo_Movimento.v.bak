@@ -1,0 +1,36 @@
+module Tempo_Movimento();
+
+input(2s, 4s, 8s);
+output(A7, B7, C7, D7, E7, F7, G7, P7);
+
+// Negações
+not(not2s, 2s);
+not(not4s, 4s);
+not(not8s, 8s);
+
+// Fios
+
+// Expressão para A: F = 2s 8s + 4s !8s
+	and(and0, 2s, 8s);
+	and(and1, 4s, not8s);
+	
+	or(A7, and0, and1);
+	
+// Expressão para B: F = !2s 4s 8s
+	and(B7, not2s, 4s, 8s);
+		
+// Expressão para C: F = !4s !8s + !2s 4s 8s
+	and(and2, not4s, not8s);
+	and(and3, not2s, 4s, 8s);
+	
+	or(C7, and2, and3);
+	
+// Expressão para D: F = 2s 8s + 4s !8s + !2s !8s
+
+		
+// Expressão para E: F = 2s 8s + 4s !8s		
+// Expressão para F: F = 2s		
+// Expressão para G: F = 2s 4s + !4s 8s		
+// Expressão para P: F = 1		
+
+endmodule

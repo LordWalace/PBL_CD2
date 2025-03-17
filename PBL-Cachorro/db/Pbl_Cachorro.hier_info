@@ -1,0 +1,390 @@
+|Pbl_Cachorro
+clk => clk.IN1
+T2s => T2s.IN1
+T4s => T4s.IN1
+T8s => T8s.IN1
+LD => LD.IN1
+Botao => notBotao.IN1
+SA <= Mux:comb_15.port3
+SB <= Mux:comb_16.port3
+SC <= Mux:comb_17.port3
+SD <= Mux:comb_18.port3
+SE <= Mux:comb_19.port3
+SF <= Mux:comb_20.port3
+SG <= Mux:comb_21.port3
+SP <= Mux:comb_22.port3
+Led <= LD.DB_MAX_OUTPUT_PORT_TYPE
+Disp1 <= aux1.DB_MAX_OUTPUT_PORT_TYPE
+Disp2 <= <VCC>
+Disp3 <= <VCC>
+Disp4 <= aux2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Pbl_Cachorro|Tempo_Movimento:comb_13
+T2s => WideAnd0.IN1
+T2s => and0.IN0
+T2s => and1.IN0
+T2s => WideOr2.IN2
+T2s => WideAnd5.IN0
+T2s => WideAnd1.IN1
+T2s => WideAnd2.IN1
+T2s => WideAnd3.IN0
+T2s => comb.IN0
+T2s => WideAnd4.IN0
+T4s => WideAnd1.IN2
+T4s => WideAnd3.IN1
+T4s => and0.IN1
+T4s => and2.IN0
+T4s => and3.IN0
+T4s => WideAnd4.IN1
+T4s => WideAnd0.IN2
+T4s => WideAnd2.IN2
+T4s => and4.IN0
+T4s => WideAnd5.IN1
+T8s => WideAnd2.IN3
+T8s => and1.IN1
+T8s => and2.IN1
+T8s => and3.IN1
+T8s => WideAnd0.IN3
+T8s => WideAnd1.IN3
+T8s => WideAnd3.IN2
+T8s => and4.IN1
+T8s => comb.IN1
+T8s => WideAnd4.IN2
+T8s => WideAnd5.IN2
+clk => clk.IN1
+LD => comb.IN1
+A7 <= WideAnd3.DB_MAX_OUTPUT_PORT_TYPE
+B7 <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+C7 <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+D7 <= comb.DB_MAX_OUTPUT_PORT_TYPE
+E7 <= WideAnd4.DB_MAX_OUTPUT_PORT_TYPE
+F7 <= WideAnd5.DB_MAX_OUTPUT_PORT_TYPE
+G7 <= <GND>
+P7 <= <VCC>
+Tempo <= comb.DB_MAX_OUTPUT_PORT_TYPE
+FS <= DivisorFrequencia:comb_6.port5
+Erro <= <GND>
+
+
+|Pbl_Cachorro|Tempo_Movimento:comb_13|DivisorFrequencia:comb_6
+clk => clk.IN1
+Frequencia1s <= Frequencia1s.DB_MAX_OUTPUT_PORT_TYPE
+Frequencia8s <= Flip_Flop_T:comb_31.port3
+Frequencia4s <= Frequencia4s.DB_MAX_OUTPUT_PORT_TYPE
+Frequencia2s <= Frequencia2s.DB_MAX_OUTPUT_PORT_TYPE
+Q15 <= Q15.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Pbl_Cachorro|Tempo_Movimento:comb_13|DivisorFrequencia:comb_6|Flip_Flop_T:comb_3
+clk => Q~reg0.CLK
+reset => Q~reg0.ACLR
+T => Q~reg0.ENA
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Pbl_Cachorro|Tempo_Movimento:comb_13|DivisorFrequencia:comb_6|Flip_Flop_T:comb_4
+clk => Q~reg0.CLK
+reset => Q~reg0.ACLR
+T => Q~reg0.ENA
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Pbl_Cachorro|Tempo_Movimento:comb_13|DivisorFrequencia:comb_6|Flip_Flop_T:comb_5
+clk => Q~reg0.CLK
+reset => Q~reg0.ACLR
+T => Q~reg0.ENA
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Pbl_Cachorro|Tempo_Movimento:comb_13|DivisorFrequencia:comb_6|Flip_Flop_T:comb_6
+clk => Q~reg0.CLK
+reset => Q~reg0.ACLR
+T => Q~reg0.ENA
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Pbl_Cachorro|Tempo_Movimento:comb_13|DivisorFrequencia:comb_6|Flip_Flop_T:comb_7
+clk => Q~reg0.CLK
+reset => Q~reg0.ACLR
+T => Q~reg0.ENA
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Pbl_Cachorro|Tempo_Movimento:comb_13|DivisorFrequencia:comb_6|Flip_Flop_T:comb_8
+clk => Q~reg0.CLK
+reset => Q~reg0.ACLR
+T => Q~reg0.ENA
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Pbl_Cachorro|Tempo_Movimento:comb_13|DivisorFrequencia:comb_6|Flip_Flop_T:comb_9
+clk => Q~reg0.CLK
+reset => Q~reg0.ACLR
+T => Q~reg0.ENA
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Pbl_Cachorro|Tempo_Movimento:comb_13|DivisorFrequencia:comb_6|Flip_Flop_T:comb_10
+clk => Q~reg0.CLK
+reset => Q~reg0.ACLR
+T => Q~reg0.ENA
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Pbl_Cachorro|Tempo_Movimento:comb_13|DivisorFrequencia:comb_6|Flip_Flop_T:comb_11
+clk => Q~reg0.CLK
+reset => Q~reg0.ACLR
+T => Q~reg0.ENA
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Pbl_Cachorro|Tempo_Movimento:comb_13|DivisorFrequencia:comb_6|Flip_Flop_T:comb_12
+clk => Q~reg0.CLK
+reset => Q~reg0.ACLR
+T => Q~reg0.ENA
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Pbl_Cachorro|Tempo_Movimento:comb_13|DivisorFrequencia:comb_6|Flip_Flop_T:comb_13
+clk => Q~reg0.CLK
+reset => Q~reg0.ACLR
+T => Q~reg0.ENA
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Pbl_Cachorro|Tempo_Movimento:comb_13|DivisorFrequencia:comb_6|Flip_Flop_T:comb_14
+clk => Q~reg0.CLK
+reset => Q~reg0.ACLR
+T => Q~reg0.ENA
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Pbl_Cachorro|Tempo_Movimento:comb_13|DivisorFrequencia:comb_6|Flip_Flop_T:comb_15
+clk => Q~reg0.CLK
+reset => Q~reg0.ACLR
+T => Q~reg0.ENA
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Pbl_Cachorro|Tempo_Movimento:comb_13|DivisorFrequencia:comb_6|Flip_Flop_T:comb_16
+clk => Q~reg0.CLK
+reset => Q~reg0.ACLR
+T => Q~reg0.ENA
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Pbl_Cachorro|Tempo_Movimento:comb_13|DivisorFrequencia:comb_6|Flip_Flop_T:comb_17
+clk => Q~reg0.CLK
+reset => Q~reg0.ACLR
+T => Q~reg0.ENA
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Pbl_Cachorro|Tempo_Movimento:comb_13|DivisorFrequencia:comb_6|Flip_Flop_T:comb_18
+clk => Q~reg0.CLK
+reset => Q~reg0.ACLR
+T => Q~reg0.ENA
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Pbl_Cachorro|Tempo_Movimento:comb_13|DivisorFrequencia:comb_6|Flip_Flop_T:comb_19
+clk => Q~reg0.CLK
+reset => Q~reg0.ACLR
+T => Q~reg0.ENA
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Pbl_Cachorro|Tempo_Movimento:comb_13|DivisorFrequencia:comb_6|Flip_Flop_T:comb_20
+clk => Q~reg0.CLK
+reset => Q~reg0.ACLR
+T => Q~reg0.ENA
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Pbl_Cachorro|Tempo_Movimento:comb_13|DivisorFrequencia:comb_6|Flip_Flop_T:comb_21
+clk => Q~reg0.CLK
+reset => Q~reg0.ACLR
+T => Q~reg0.ENA
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Pbl_Cachorro|Tempo_Movimento:comb_13|DivisorFrequencia:comb_6|Flip_Flop_T:comb_22
+clk => Q~reg0.CLK
+reset => Q~reg0.ACLR
+T => Q~reg0.ENA
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Pbl_Cachorro|Tempo_Movimento:comb_13|DivisorFrequencia:comb_6|Flip_Flop_T:comb_23
+clk => Q~reg0.CLK
+reset => Q~reg0.ACLR
+T => Q~reg0.ENA
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Pbl_Cachorro|Tempo_Movimento:comb_13|DivisorFrequencia:comb_6|Flip_Flop_T:comb_24
+clk => Q~reg0.CLK
+reset => Q~reg0.ACLR
+T => Q~reg0.ENA
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Pbl_Cachorro|Tempo_Movimento:comb_13|DivisorFrequencia:comb_6|Flip_Flop_T:comb_25
+clk => Q~reg0.CLK
+reset => Q~reg0.ACLR
+T => Q~reg0.ENA
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Pbl_Cachorro|Tempo_Movimento:comb_13|DivisorFrequencia:comb_6|Flip_Flop_T:comb_26
+clk => Q~reg0.CLK
+reset => Q~reg0.ACLR
+T => Q~reg0.ENA
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Pbl_Cachorro|Tempo_Movimento:comb_13|DivisorFrequencia:comb_6|Flip_Flop_T:comb_27
+clk => Q~reg0.CLK
+reset => Q~reg0.ACLR
+T => Q~reg0.ENA
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Pbl_Cachorro|Tempo_Movimento:comb_13|DivisorFrequencia:comb_6|Flip_Flop_T:comb_28
+clk => Q~reg0.CLK
+reset => Q~reg0.ACLR
+T => Q~reg0.ENA
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Pbl_Cachorro|Tempo_Movimento:comb_13|DivisorFrequencia:comb_6|Flip_Flop_T:comb_29
+clk => Q~reg0.CLK
+reset => Q~reg0.ACLR
+T => Q~reg0.ENA
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Pbl_Cachorro|Tempo_Movimento:comb_13|DivisorFrequencia:comb_6|Flip_Flop_T:comb_30
+clk => Q~reg0.CLK
+reset => Q~reg0.ACLR
+T => Q~reg0.ENA
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Pbl_Cachorro|Tempo_Movimento:comb_13|DivisorFrequencia:comb_6|Flip_Flop_T:comb_31
+clk => Q~reg0.CLK
+reset => Q~reg0.ACLR
+T => Q~reg0.ENA
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Pbl_Cachorro|Movimento:comb_14
+clkd => clkd.IN3
+reset => reset.IN2
+preset => preset.IN1
+Botao => Botao.IN3
+A7 <= comb.DB_MAX_OUTPUT_PORT_TYPE
+B7 <= comb.DB_MAX_OUTPUT_PORT_TYPE
+C7 <= comb.DB_MAX_OUTPUT_PORT_TYPE
+D7 <= comb.DB_MAX_OUTPUT_PORT_TYPE
+E7 <= comb.DB_MAX_OUTPUT_PORT_TYPE
+F7 <= comb.DB_MAX_OUTPUT_PORT_TYPE
+G7 <= comb.DB_MAX_OUTPUT_PORT_TYPE
+P7 <= <VCC>
+Q1 <= Flip_Flop_D:comb_3.port4
+Q2 <= Flip_Flop_D:comb_4.port4
+Q3 <= Flip_Flop_D:comb_5.port4
+
+
+|Pbl_Cachorro|Movimento:comb_14|Flip_Flop_D:comb_3
+d => q~reg0.DATAIN
+clk => q~reg0.CLK
+reset => q.IN0
+preset => q~reg0.PRESET
+preset => q.IN1
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Pbl_Cachorro|Movimento:comb_14|Flip_Flop_D:comb_4
+d => q~reg0.DATAIN
+clk => q~reg0.CLK
+reset => q.IN0
+preset => q~reg0.PRESET
+preset => q.IN1
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Pbl_Cachorro|Movimento:comb_14|Flip_Flop_D:comb_5
+d => q~reg0.DATAIN
+clk => q~reg0.CLK
+reset => q.IN0
+preset => q~reg0.PRESET
+preset => q.IN1
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Pbl_Cachorro|Mux:comb_15
+Seletor => aux0.IN0
+Seletor => aux1.IN0
+DM => aux0.IN1
+DT => aux1.IN1
+S <= comb.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Pbl_Cachorro|Mux:comb_16
+Seletor => aux0.IN0
+Seletor => aux1.IN0
+DM => aux0.IN1
+DT => aux1.IN1
+S <= comb.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Pbl_Cachorro|Mux:comb_17
+Seletor => aux0.IN0
+Seletor => aux1.IN0
+DM => aux0.IN1
+DT => aux1.IN1
+S <= comb.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Pbl_Cachorro|Mux:comb_18
+Seletor => aux0.IN0
+Seletor => aux1.IN0
+DM => aux0.IN1
+DT => aux1.IN1
+S <= comb.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Pbl_Cachorro|Mux:comb_19
+Seletor => aux0.IN0
+Seletor => aux1.IN0
+DM => aux0.IN1
+DT => aux1.IN1
+S <= comb.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Pbl_Cachorro|Mux:comb_20
+Seletor => aux0.IN0
+Seletor => aux1.IN0
+DM => aux0.IN1
+DT => aux1.IN1
+S <= comb.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Pbl_Cachorro|Mux:comb_21
+Seletor => aux0.IN0
+Seletor => aux1.IN0
+DM => aux0.IN1
+DT => aux1.IN1
+S <= comb.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Pbl_Cachorro|Mux:comb_22
+Seletor => aux0.IN0
+Seletor => aux1.IN0
+DM => aux0.IN1
+DT => aux1.IN1
+S <= comb.DB_MAX_OUTPUT_PORT_TYPE
+
+
